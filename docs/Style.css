@@ -37,18 +37,23 @@ input:user-invalid {
   border: 1.5px solid rgba(255, 0, 0, 0.416);
 }
 
-@keyframes float {
-
-  0%,
-  100% {
-    transform: translateY(0px);
+/* loader */
+@keyframes loaderBar {
+  0% {
+    transform: translateX(0%);
   }
 
   50% {
-    transform: translateY(-12px);
+    transform: translateX(100%);
+  }
+
+  100% {
+    transform: translateX(0%);
   }
 }
 
-.animate-float {
-  animation: float 6s ease-in-out infinite;
+.animate-loaderBar {
+  animation: loaderBar 1.2s ease-in-out infinite;
 }
+
+/* loader */

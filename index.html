@@ -74,75 +74,7 @@
 
     <!-- ----------------------------components------------------------------ -->
     <!-- Loader -->
-    <div id="siteLoader" class="fixed inset-0 z-[9999] bg-white flex items-center justify-center">
-        <div class="relative w-full h-full flex items-center justify-center overflow-hidden">
-
-            <div class="absolute -top-24 -left-24 w-[380px] h-[380px] bg-blue-500/20 rounded-full blur-3xl"></div>
-            <div class="absolute -bottom-24 -right-24 w-[380px] h-[380px] bg-emerald-500/20 rounded-full blur-3xl">
-            </div>
-
-            <div class="relative flex flex-col items-center gap-6">
-                <div class="relative w-24 h-24  flex items-center justify-center">
-                    <img src="/docs/assets/images/favicon.png" class="h-7" alt="">
-                    <div
-                        class="absolute inset-0 rounded-3xl border-2 border-transparent border-l-blue-600 border-b-emerald-500 border-t-blue-600 border-r-emerald-500 animate-spin">
-                    </div>
-                </div>
-
-                <div class="text-center">
-                    <p class="text-lg font-semibold text-slate-900">Opti’ Scan</p>
-                    <p class="text-sm text-slate-600 mt-1">Chargement…</p>
-                </div>
-
-                <div class="w-56 h-2 rounded-full bg-slate-100 overflow-hidden border border-slate-200">
-                    <div
-                        class="h-full w-1/2 rounded-full bg-gradient-to-r from-blue-600 to-emerald-500 animate-loaderBar">
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </div>
-
-    <script>
-        const loader = document.getElementById("siteLoader");
-        const MIN_LOADER_TIME = 500;
-
-        const startTime = Date.now();
-
-        function hideLoader() {
-            const elapsed = Date.now() - startTime;
-            const remaining = Math.max(0, MIN_LOADER_TIME - elapsed);
-
-            setTimeout(() => {
-                loader.classList.add("opacity-0", "pointer-events-none");
-                loader.style.transition = "opacity 450ms ease";
-                setTimeout(() => loader.remove(), 500);
-            }, remaining);
-        }
-
-        window.addEventListener("load", hideLoader);
-    </script>
-
-    <style>
-        @keyframes loaderBar {
-            0% {
-                transform: translateX(0%);
-            }
-
-            50% {
-                transform: translateX(100%);
-            }
-
-            100% {
-                transform: translateX(0%);
-            }
-        }
-
-        .animate-loaderBar {
-            animation: loaderBar 1.2s ease-in-out infinite;
-        }
-    </style>
+    <div id="loader"></div>
 
     <!-- Back to Top Button -->
     <button id="backToTop"
@@ -172,87 +104,10 @@
     <!-- ----------------------------components------------------------------ -->
 
 
-    <!-- Header Section -->
-    <header id="siteHeader" data-aos="fade-down"
-        class="fixed transition-all duration-500 top-0 left-0 w-full z-50 bg-white/80 backdrop-blur border-b border-slate-200">
-        <div class="max-w-7xl mx-auto px-6 h-16 flex items-center md:h-24 justify-between">
 
-            <a href="/index.html" class="text-xl font-semibold text-slate-900">
-                <img src="/docs/assets/images/logo.png" class="h-10 md:h-14" alt="">
-            </a>
 
-            <nav class="hidden lg:flex items-center gap-8 text-sm font-medium text-slate-700">
-                <a href="#" class="hover:text-slate-900">Banques</a>
-                <a href="#" class="hover:text-slate-900">Banques Pro</a>
-                <a href="#" class="hover:text-slate-900">Assurances</a>
-                <a href="#" class="hover:text-slate-900">Guides</a>
-                <a href="#" class="px-5 py-2 rounded-xl bg-slate-900 text-white hover:opacity-90 transition">
-                    Comparer
-                </a>
-            </nav>
-
-            <button id="menuBtn" class="lg:hidden text-slate-800 text-xl">
-                <i class="fa-solid fa-bars"></i>
-            </button>
-        </div>
-    </header>
-
-    <!-- Mobile Sidebar -->
-    <div id="mobileMenu"
-        class="fixed top-0 right-0 h-full w-0 bg-white overflow-hidden transition-all duration-300 ease-in-out z-50">
-
-        <div class="flex items-center justify-between px-6 h-16 border-b border-slate-200">
-            <a href="/index.html" class="text-xl font-semibold text-slate-900">
-                <img src="/docs/assets/images/logo.png" class="h-10 md:h-14" alt="">
-            </a>
-            <button id="closeBtn" class="text-xl text-slate-800">
-                <i class="fa-solid fa-xmark"></i>
-            </button>
-        </div>
-
-        <nav class="flex flex-col gap-6 px-6 py-10 text-slate-700 font-medium">
-            <a href="#" class="hover:text-slate-900">Banques</a>
-            <a href="#" class="hover:text-slate-900">Banques Pro</a>
-            <a href="#" class="hover:text-slate-900">Assurances</a>
-            <a href="#" class="hover:text-slate-900">Guides</a>
-            <a href="#" class="mt-4 inline-flex justify-center px-6 py-3 rounded-xl bg-slate-900 text-white">
-                Comparer
-            </a>
-        </nav>
-    </div>
-
-    <script>
-        const menuBtn = document.getElementById("menuBtn");
-        const closeBtn = document.getElementById("closeBtn");
-        const mobileMenu = document.getElementById("mobileMenu");
-
-        menuBtn.addEventListener("click", () => {
-            mobileMenu.style.width = "100%";
-        });
-
-        closeBtn.addEventListener("click", () => {
-            mobileMenu.style.width = "0";
-        });
-
-        document.addEventListener("DOMContentLoaded", () => {
-            const header = document.getElementById("siteHeader");
-
-            function updateHeaderBg() {
-                if (window.scrollY > 100) {
-                    header.classList.remove("bg-transparent");
-                    header.classList.add("bg-white/80");
-                } else {
-                    header.classList.remove("bg-white/80");
-                    header.classList.add("bg-transparent");
-                }
-            }
-
-            updateHeaderBg();
-
-            window.addEventListener("scroll", updateHeaderBg, { passive: true });
-        });
-
-    </script>
+    <!-- Navbar -->
+    <div id="navbar"></div>
 
 
     <!-- hero section -->
@@ -285,7 +140,8 @@
                     </span>
                 </h1>
 
-                <p class="text-lg text-slate-600 max-w-xl pb-5 md:text-start md:pb-0 text-center" data-aos="fade-up" data-aos-delay="600">
+                <p class="text-lg text-slate-600 max-w-xl pb-5 md:text-start md:pb-0 text-center" data-aos="fade-up"
+                    data-aos-delay="600">
                     Opti’ Scan analyse, compare et sélectionne pour vous les banques,
                     assurances et services financiers les plus adaptés à vos besoins.
                 </p>
@@ -1117,84 +973,12 @@
     </section>
 
     <!-- Footer Section -->
-    <footer class="relative bg-white border-t border-slate-200">
-        <div class="max-w-7xl mx-auto px-6 pt-20 pb-8">
-
-            <div class="grid grid-cols-1 md:grid-cols-4 gap-12">
-
-                <div>
-                    <a href="/index.html" class="text-xl font-semibold text-slate-900">
-                        <img src="/docs/assets/images/logo.png" class="h-16 md:h-14" alt="">
-                    </a>
-                    <p class="text-sm mt-5 text-slate-600 max-w-sm">
-                        Plateforme indépendante de comparaison bancaire, d’assurances et de services financiers.
-                    </p>
-                </div>
-
-                <div>
-                    <h4 class="font-semibold text-slate-900 mb-4">
-                        Comparer
-                    </h4>
-                    <ul class="space-y-3 text-sm text-slate-600">
-                        <li><a href="#" class="hover:text-slate-900">Banques</a></li>
-                        <li><a href="#" class="hover:text-slate-900">Banques Pro</a></li>
-                        <li><a href="#" class="hover:text-slate-900">Assurances</a></li>
-                        <li><a href="#" class="hover:text-slate-900">Services financiers</a></li>
-                    </ul>
-                </div>
-
-                <div>
-                    <h4 class="font-semibold text-slate-900 mb-4">
-                        Ressources
-                    </h4>
-                    <ul class="space-y-3 text-sm text-slate-600">
-                        <li><a href="#" class="hover:text-slate-900">Guides & conseils</a></li>
-                        <li><a href="#" class="hover:text-slate-900">Classements</a></li>
-                        <li><a href="#" class="hover:text-slate-900">FAQ</a></li>
-                        <li><a href="#" class="hover:text-slate-900">Contact</a></li>
-                    </ul>
-                </div>
-
-                <div>
-                    <h4 class="font-semibold text-slate-900 mb-4">
-                        Légal
-                    </h4>
-                    <ul class="space-y-3 text-sm text-slate-600">
-                        <li><a href="#" class="hover:text-slate-900">Mentions légales</a></li>
-                        <li><a href="#" class="hover:text-slate-900">Politique de confidentialité</a></li>
-                        <li><a href="#" class="hover:text-slate-900">Cookies</a></li>
-                        <li><a href="#" class="hover:text-slate-900">Transparence</a></li>
-                    </ul>
-                </div>
-
-            </div>
-
-            <div
-                class="mt-16 pt-8 border-t border-slate-200 flex flex-col md:flex-row items-center justify-between gap-6">
-                <p class="text-sm text-slate-500">
-                    © 2025 Opti’ Scan. Tous droits réservés.
-                </p>
-
-                <div class="flex items-center gap-6 text-slate-500">
-                    <a href="#" class="hover:text-slate-900 text-xl transition-all">
-                        <i class="fa-brands fa-facebook"></i>
-                    </a>
-                    <a href="#" class="hover:text-slate-900 text-xl transition-all">
-                        <i class="fa-brands fa-twitter"></i>
-                    </a>
-                    <a href="#" class="hover:text-slate-900 text-xl transition-all">
-                        <i class="fa-brands fa-linkedin"></i>
-                    </a>
-                </div>
-            </div>
-
-        </div>
-    </footer>
+    <div id="footer"></div>
 
 
     <!-- Scripts -->
-    <!-- <script src="./docs/javascript/navbar.js"></script>
-    <script src="./docs/javascript/footer.js"></script> -->
+    <script src="./docs/javascript/navbar.js"></script>
+    <script src="./docs/javascript/footer.js"></script>
     <script src="https://unpkg.com/lenis@1.3.1/dist/lenis.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
     <script src="./docs/javascript/global.js"></script>

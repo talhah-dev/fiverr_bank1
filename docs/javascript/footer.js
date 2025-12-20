@@ -1,72 +1,77 @@
 const footer = document.getElementById("footer");
 
 footer.innerHTML = `
-    <footer class="bg-[#0b3a57] text-white pt-16 pb-8">
-        <div class="max-w-7xl mx-auto px-4">
-            <div class="">
-                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 text-sm">
-                    <div>
-                        <h3 class="font-semibold mb-3 md:mb-7 text-xl">BetrugsExperten.de</h3>
-                        <p class="text-white/80 leading-relaxed">
-                            Ihr Netzwerk aus Rechtsanwälten und internationalen Ermittlern für
-                            professionelle Hilfe bei Online-Betrug.
-                        </p>
-                    </div>
+    <footer class="relative bg-white border-t border-slate-200">
+        <div class="max-w-7xl mx-auto px-6 pt-20 pb-8">
 
-                    <div>
-                        <h3 class="font-semibold mb-3 md:mb-7 text-xl">Schnellzugriff</h3>
-                        <ul class="space-y-3 text-white/80">
-                            <li><a href="/index.html" class="hover:underline">Startseite</a></li>
-                            <li><a href="/uber-uns.html" class="hover:underline">Über uns</a></li>
-                            <li><a href="/index.html#kontakt" class="hover:underline">Kontakt</a></li>
-                        </ul>
-                    </div>
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12">
 
-                    <div>
-                        <h3 class="font-semibold mb-3 md:mb-7 text-xl">Betrugsarten</h3>
-                        <ul class="space-y-3 text-white/80">
-                            <li><a href="/investment-betrug.html" class="hover:underline">Investment-Betrug</a></li>
-                            <li><a href="/bank-betrug.html" class="hover:underline">Bank-Betrug</a></li>
-                            <li><a href="/festgeld-betrug.html" class="hover:underline">Festgeld Betrug</a></li>
-                            <li><a href="/fakeshop-betrug.html" class="hover:underline">Fakeshop-Betrug</a></li>
-                            <li><a href="/romance-betrug.html" class="hover:underline">Romance Scam</a></li>
-                        </ul>
-                    </div>
-
-                    <div>
-                        <h3 class="font-semibold mb-3 md:mb-7 text-xl">Kontakt</h3>
-                        <ul class="space-y-3 text-white/80">
-                            <li class="flex items-center space-x-2">
-                                <i class="fa-regular fa-envelope text-sm"></i>
-                                <span>info@BetrugsExperten.de</span>
-                            </li>
-                            <li class="flex items-center space-x-2">
-                                <i class="fa-solid fa-phone text-sm"></i>
-                                <span>+49 89 248833139</span>
-                            </li>
-                            <li class="flex items-center space-x-2">
-                                <i class="fa-solid fa-location-dot text-sm"></i>
-                                <span>Deutschland</span>
-                            </li>
-                        </ul>
-                    </div>
+                <div>
+                    <a href="/index.html" class="text-xl font-semibold text-slate-900">
+                        <img src="/docs/assets/images/logo.png" class="h-16 md:h-14" alt="">
+                    </a>
+                    <p class="text-sm mt-5 text-slate-600 max-w-sm">
+                        Plateforme indépendante de comparaison bancaire, d’assurances et de services financiers.
+                    </p>
                 </div>
 
-                <div
-                    class="border-t border-slate-600 md:text-start text-center mt-10 pt-4 flex flex-col md:flex-row items-center justify-between text-white/80 space-y-3 md:space-y-0">
-                    <p>© 2010 - 2025 BetrugsExperten.de Alle Rechte vorbehalten.</p>
-
-                    <div class="flex items-center text-sm space-x-6 my-4 md:my-0">
-                        <a href="/impressum.html" class="hover:underline">Impressum</a>
-                        <a href="/datenschutz.html" class="hover:underline">Datenschutz</a>
-                    </div>
+                <div>
+                    <h4 class="font-semibold text-slate-900 mb-4">
+                        Comparer
+                    </h4>
+                    <ul class="space-y-3 text-sm text-slate-600">
+                        <li><a href="#" class="hover:text-slate-900">Banques</a></li>
+                        <li><a href="#" class="hover:text-slate-900">Banques Pro</a></li>
+                        <li><a href="#" class="hover:text-slate-900">Assurances</a></li>
+                        <li><a href="#" class="hover:text-slate-900">Services financiers</a></li>
+                    </ul>
                 </div>
 
-                <p class="mt-4 text-[11px] text-slate-300/80 md:text-start text-center">
-                    Haftungsausschluss: Die Informationen auf dieser Website stellen keine Rechtsberatung dar. Für eine
-                    individuelle Beratung kontaktieren Sie uns bitte direkt.
-                </p>
+                <div>
+                    <h4 class="font-semibold text-slate-900 mb-4">
+                        Ressources
+                    </h4>
+                    <ul class="space-y-3 text-sm text-slate-600">
+                        <li><a href="#" class="hover:text-slate-900">Guides & conseils</a></li>
+                        <li><a href="#" class="hover:text-slate-900">Classements</a></li>
+                        <li><a href="/faq.html" class="hover:text-slate-900">FAQ</a></li>
+                        <li><a href="#" class="hover:text-slate-900">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="font-semibold text-slate-900 mb-4">
+                        Légal
+                    </h4>
+                    <ul class="space-y-3 text-sm text-slate-600">
+                        <li><a href="#" class="hover:text-slate-900">Mentions légales</a></li>
+                        <li><a href="#" class="hover:text-slate-900">Politique de confidentialité</a></li>
+                        <li><a href="#" class="hover:text-slate-900">Cookies</a></li>
+                        <li><a href="#" class="hover:text-slate-900">Transparence</a></li>
+                    </ul>
+                </div>
+
             </div>
+
+            <div
+                class="mt-16 pt-8 border-t border-slate-200 flex flex-col md:flex-row items-center justify-between gap-6">
+                <p class="text-sm text-slate-500">
+                    © 2025 Opti’ Scan. Tous droits réservés.
+                </p>
+
+                <div class="flex items-center gap-6 text-slate-500">
+                    <a href="#" class="hover:text-slate-900 text-xl transition-all">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                    <a href="#" class="hover:text-slate-900 text-xl transition-all">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+                    <a href="#" class="hover:text-slate-900 text-xl transition-all">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                </div>
+            </div>
+
         </div>
     </footer>
 `
