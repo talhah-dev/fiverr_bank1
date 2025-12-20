@@ -1,4 +1,4 @@
-# robots.txt for https://www.betrugsexperten.de/
+# robots.txt for https://www.opti-scan.fr/
 
 User-agent: *
 # Allow indexing of all public pages
@@ -32,4 +32,4 @@ Allow: /static/
 Disallow: /*.php$
 Disallow: /*.inc$
 
-Sitemap: http://bonusbros777.com/sitemap.xml
+Sitemap: http://www.opti-scan.fr/sitemap.xml
