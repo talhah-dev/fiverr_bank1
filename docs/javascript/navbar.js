@@ -10,12 +10,12 @@ navbar.innerHTML = `
             </a>
 
             <nav class="hidden lg:flex items-center gap-8 text-sm font-medium text-slate-700">
-                <a href="#" class="hover:text-slate-900">Banques</a>
-                <a href="#" class="hover:text-slate-900">Banques Pro</a>
-                <a href="#" class="hover:text-slate-900">Assurances</a>
-                <a href="#" class="hover:text-slate-900">Guides</a>
-                <a href="#" class="px-5 py-2 rounded-xl bg-slate-900 text-white hover:opacity-90 transition">
-                    Comparer
+                <a href="/index.html" class="hover:text-slate-900">Banques</a>
+                <a href="/bank-pros.html" class="hover:text-slate-900">Banques Pro</a>
+                <a href="/assurances.html" class="hover:text-slate-900">Assurances</a>
+                <a href="/notre-histoire.html" class="hover:text-slate-900">Notre Histoire</a>
+                <a href="/contact.html" class="px-5 py-2 rounded-xl bg-slate-900 text-white hover:opacity-90 transition">
+                    Contact
                 </a>
             </nav>
 
@@ -38,12 +38,12 @@ navbar.innerHTML = `
         </div>
 
         <nav class="flex flex-col gap-6 px-6 py-10 text-slate-700 font-medium">
-            <a href="#" class="hover:text-slate-900">Banques</a>
-            <a href="#" class="hover:text-slate-900">Banques Pro</a>
-            <a href="#" class="hover:text-slate-900">Assurances</a>
-            <a href="#" class="hover:text-slate-900">Guides</a>
-            <a href="#" class="mt-4 inline-flex justify-center px-6 py-3 rounded-xl bg-slate-900 text-white">
-                Comparer
+            <a href="/index.html" class="hover:text-slate-900">Banques</a>
+            <a href="/bank-pros.html" class="hover:text-slate-900">Banques Pro</a>
+            <a href="/assurances.html" class="hover:text-slate-900">Assurances</a>
+            <a href="/notre-histoire.html" class="hover:text-slate-900">Notre Histoire</a>
+            <a href="/contact.html" class="mt-4 inline-flex justify-center px-6 py-3 rounded-xl bg-slate-900 text-white">
+                Contact
             </a>
         </nav>
     </div>

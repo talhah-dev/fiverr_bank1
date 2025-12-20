@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Opti’ Scan | Comparateur banques, assurances & services financiers</title>
+
+    <meta name="description"
+        content="Opti’ Scan compare les meilleures offres bancaires, assurances et services financiers. Trouvez rapidement l’offre la plus adaptée à vos besoins avec une comparaison claire et transparente." />
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <link rel="canonical" href="https://opti-scan.fr/" />
+
+    <!-- Open Graph -->
+    <meta property="og:locale" content="fr_FR" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Opti’ Scan" />
+    <meta property="og:title" content="Opti’ Scan | Comparateur banques, assurances & services financiers" />
+    <meta property="og:description"
+        content="Comparez les meilleures banques en ligne, assurances et services financiers. Faites un choix éclairé avec Opti’ Scan." />
+    <meta property="og:url" content="https://opti-scan.fr/" />
+    <meta property="og:image" content="https://opti-scan.fr/docs/assets/images/og-image.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Opti’ Scan | Comparateur banques, assurances & services financiers" />
+    <meta name="twitter:description"
+        content="Comparez les meilleures offres bancaires, assurances et services financiers en toute transparence." />
+    <meta name="twitter:image" content="https://opti-scan.fr/docs/assets/images/og-image.png" />
+
+    <!-- Icons -->
+    <link rel="icon" type="image/png" href="/docs/assets/images/favicon.png" />
+    <link rel="apple-touch-icon" href="/docs/assets/images/apple-touch-icon.png" />
+
+    <!-- Preconnect -->
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin />
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
+    <link rel="preconnect" href="https://unpkg.com" crossorigin />
+
+    <link rel="stylesheet" href="/docs/Style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://unpkg.com/lenis@1.3.1/dist/lenis.css" />
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+
+    <!-- JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Opti’ Scan",
+      "url": "https://opti-scan.fr/",
+      "inLanguage": "fr-FR",
+      "description": "Comparateur de banques, assurances et services financiers.",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://opti-scan.fr/?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    }
+  </script>
+</head>
+
+
+
+<body class="">
+
+    <!-- ----------------------------components------------------------------ -->
+    <!-- Loader -->
+    <div id="loader"></div>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop"
+        class="fixed bottom-6 right-6 z-50 h-12 w-12 rounded-2xl bg-slate-900 text-white shadow-lg opacity-0 pointer-events-none translate-y-3 transition-all duration-300 hover:opacity-90">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <script>
+        const backToTop = document.getElementById("backToTop");
+
+        window.addEventListener("scroll", () => {
+            if (window.scrollY > 200) {
+                backToTop.classList.remove("opacity-0", "pointer-events-none", "translate-y-3");
+                backToTop.classList.add("opacity-100", "translate-y-0");
+            } else {
+                backToTop.classList.add("opacity-0", "pointer-events-none", "translate-y-3");
+                backToTop.classList.remove("opacity-100", "translate-y-0");
+            }
+        });
+
+        backToTop.addEventListener("click", () => {
+            window.scrollTo({ top: 0, behavior: "smooth" });
+        });
+    </script>
+
+
+    <!-- ----------------------------components------------------------------ -->
+
+
+
+
+    <!-- Navbar -->
+    <div id="navbar"></div>
+
+    <!-- BOURSOBANK – Retail Detail Page -->
+    <section class="relative pt-28 pb-16 bg-white overflow-hidden">
+        <div class="absolute -top-28 -left-28 w-[420px] h-[420px] bg-blue-500/10 rounded-full blur-3xl"></div>
+        <div class="absolute top-24 -right-28 w-[420px] h-[420px] bg-emerald-500/10 rounded-full blur-3xl"></div>
+
+        <div class="max-w-7xl mx-auto px-6">
+            <nav class="flex items-center justify-between gap-6 mb-10">
+                <a href="banques.html"
+                    class="inline-flex items-center gap-2 text-sm font-medium text-slate-700 hover:text-slate-900 transition">
+                    <i class="fa-solid fa-arrow-left"></i>
+                    Retour aux banques
+                </a>
+
+                <div class="flex items-center gap-2">
+                    <span
+                        class="hidden sm:inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-slate-50 border border-slate-200 text-xs text-slate-700">
+                        <i class="fa-solid fa-building-columns text-emerald-600"></i> Banque en ligne
+                    </span>
+                    <span
+                        class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-slate-900 text-white text-xs">
+                        <i class="fa-solid fa-piggy-bank"></i> Économique
+                    </span>
+                </div>
+            </nav>
+
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+                <div class="lg:col-span-7 space-y-7">
+                    <div
+                        class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-slate-50 border border-slate-200">
+                        <i class="fa-solid fa-bolt text-emerald-600"></i>
+                        <span class="text-sm font-medium text-slate-700">Notre avis sur BoursoBank</span>
+                    </div>
+
+                    <h1 class="text-4xl md:text-5xl font-semibold tracking-tight text-slate-900">
+                        BoursoBank :
+                        <span class="block text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-emerald-500">
+                            l’option simple et économique pour les pros & indépendants
+                        </span>
+                    </h1>
+
+                    <p class="text-lg text-slate-600 leading-relaxed max-w-2xl">
+                        BoursoBank se positionne comme une banque en ligne reconnue pour ses frais minimisés, une
+                        expérience digitale
+                        claire et des offres intéressantes pour les auto-entrepreneurs et indépendants. L’idée : réduire
+                        le “bruit”
+                        et garder une gestion fluide, sans mauvaises surprises.
+                    </p>
+
+                    <div class="flex flex-wrap gap-4">
+                        <a href="#cta"
+                            class="inline-flex items-center justify-center gap-2 px-7 py-3 rounded-xl bg-slate-900 text-white font-medium hover:opacity-90 transition">
+                            Visiter le site
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                        <a href="#resume"
+                            class="inline-flex items-center justify-center gap-2 px-7 py-3 rounded-xl border border-slate-300 text-slate-700 hover:bg-slate-50 transition">
+                            Découvrez si c’est fait pour vous
+                            <i class="fa-solid fa-circle-question"></i>
+                        </a>
+                    </div>
+
+                    <div class="flex flex-wrap items-center gap-6 pt-2 text-sm text-slate-600">
+                        <span class="inline-flex items-center gap-2">
+                            <i class="fa-solid fa-circle-check text-emerald-600"></i>
+                            Frais maîtrisés
+                        </span>
+                        <span class="inline-flex items-center gap-2">
+                            <i class="fa-solid fa-circle-check text-emerald-600"></i>
+                            Offre pro dédiée
+                        </span>
+                        <span class="inline-flex items-center gap-2">
+                            <i class="fa-solid fa-circle-check text-emerald-600"></i>
+                            Expérience digitale
+                        </span>
+                    </div>
+                </div>
+
+                <aside class="lg:col-span-5 lg:sticky lg:top-24">
+                    <div class="relative rounded-[2.5rem] border border-slate-200 bg-white shadow-xl p-8">
+                        <div class="flex items-center justify-between gap-4">
+                            <div class="flex items-center gap-3">
+                                <div
+                                    class="h-12 w-12 rounded-2xl bg-gradient-to-br from-blue-600 to-emerald-500 text-white flex items-center justify-center">
+                                    <i class="fa-solid fa-building-columns"></i>
+                                </div>
+                                <div>
+                                    <p class="text-sm font-semibold text-slate-900">BoursoBank</p>
+                                    <p class="text-sm text-slate-600">Banque en ligne</p>
+                                </div>
+                            </div>
+
+                            <div
+                                class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-slate-50 border border-slate-200 text-xs text-slate-700">
+                                <i class="fa-solid fa-star text-amber-500"></i>
+                                Avis Opti’ Scan
+                            </div>
+                        </div>
+
+                        <div class="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div class="rounded-2xl border border-slate-200 bg-slate-50 p-5">
+                                <p class="text-xs text-slate-500">Ouverture</p>
+                                <p class="mt-1 text-sm font-semibold text-slate-900">Flexible</p>
+                                <p class="text-xs text-slate-500 mt-1">Sans versement initial</p>
+                            </div>
+
+                            <div class="rounded-2xl border border-slate-200 bg-slate-50 p-5">
+                                <p class="text-xs text-slate-500">Carte premium</p>
+                                <p class="mt-1 text-sm font-semibold text-slate-900">Possible</p>
+                                <p class="text-xs text-slate-500 mt-1">Selon conditions</p>
+                            </div>
+
+                            <div class="rounded-2xl border border-slate-200 bg-slate-50 p-5">
+                                <p class="text-xs text-slate-500">Pour</p>
+                                <p class="mt-1 text-sm font-semibold text-slate-900">Indépendants</p>
+                                <p class="text-xs text-slate-500 mt-1">Auto-entrepreneurs</p>
+                            </div>
+
+                            <div class="rounded-2xl border border-slate-200 bg-slate-50 p-5">
+                                <p class="text-xs text-slate-500">À noter</p>
+                                <p class="mt-1 text-sm font-semibold text-slate-900">Contact</p>
+                                <p class="text-xs text-slate-500 mt-1">Pas de chat annoncé</p>
+                            </div>
+                        </div>
+
+                        <a href="#cta"
+                            class="inline-flex items-center justify-center gap-2 mt-6 w-full px-6 py-3 rounded-xl bg-slate-900 text-white font-medium hover:opacity-90 transition">
+                            Découvrir BoursoBank
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+
+                        <p class="mt-4 text-xs text-slate-500">
+                            Informations indicatives : vérifiez conditions, frais et éligibilité sur le site officiel.
+                        </p>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </section>
+
+    <!-- Résumé + Pour / Contre -->
+    <section id="resume" class="relative py-20 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
+                <div class="lg:col-span-5">
+                    <div class="rounded-[2.25rem] border border-slate-200 bg-white p-8 shadow-sm">
+                        <div
+                            class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-slate-50 border border-slate-200">
+                            <i class="fa-solid fa-file-lines text-emerald-600"></i>
+                            <span class="text-sm font-medium text-slate-700">BoursoBank en résumé</span>
+                        </div>
+
+                        <h2 class="mt-6 text-2xl md:text-3xl font-semibold text-slate-900">
+                            La banque en ligne “frais au minimum”
+                        </h2>
+
+                        <p class="mt-4 text-slate-600 leading-relaxed">
+                            BoursoBank met en avant une approche transparente : les frais sont réduits au strict
+                            nécessaire pour
+                            limiter les surprises. C’est une option souvent citée pour celles et ceux qui cherchent une
+                            solution
+                            simple, digitale et efficace, notamment pour un usage pro/indépendant.
+                        </p>
+
+                        <div class="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div class="rounded-3xl border border-slate-200 bg-slate-50 p-6">
+                                <p class="text-sm font-semibold text-slate-900">Pour</p>
+                                <ul class="mt-3 space-y-2 text-sm text-slate-600">
+                                    <li class="flex gap-2"><i
+                                            class="fa-solid fa-circle-check text-emerald-600 mt-0.5"></i>Conditions
+                                        d’ouverture flexibles</li>
+                                    <li class="flex gap-2"><i
+                                            class="fa-solid fa-circle-check text-emerald-600 mt-0.5"></i>Carte premium
+                                        possible gratuitement</li>
+                                    <li class="flex gap-2"><i
+                                            class="fa-solid fa-circle-check text-emerald-600 mt-0.5"></i>Offres pro
+                                        avantageuses</li>
+                                </ul>
+                            </div>
+
+                            <div class="rounded-3xl border border-slate-200 bg-white p-6">
+                                <p class="text-sm font-semibold text-slate-900">Contre</p>
+                                <ul class="mt-3 space-y-2 text-sm text-slate-600">
+                                    <li class="flex gap-2"><i
+                                            class="fa-solid fa-triangle-exclamation text-amber-500 mt-0.5"></i>SAV
+                                        perfectible</li>
+                                    <li class="flex gap-2"><i
+                                            class="fa-solid fa-triangle-exclamation text-amber-500 mt-0.5"></i>App
+                                        mobile parfois à fluidifier</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-7">
+                    <div class="rounded-[2.25rem] border border-slate-200 bg-white p-8 shadow-sm">
+                        <h3 class="text-xl font-semibold text-slate-900">
+                            Caractéristiques, frais et coûts
+                        </h3>
+
+                        <p class="mt-3 text-slate-600 leading-relaxed">
+                            BoursoBank se présente comme une banque en ligne très abordable et transparente, avec une
+                            logique de
+                            frais minimisés. Comme beaucoup de banques en ligne, un bonus d’ouverture peut exister selon
+                            les offres
+                            et périodes (à vérifier au moment de votre souscription).
+                        </p>
+
+                        <div class="mt-6 grid grid-cols-1 md:grid-cols-2 gap-5">
+                            <div class="rounded-3xl border border-slate-200 bg-slate-50 p-6 hover:shadow-md transition">
+                                <div
+                                    class="h-11 w-11 rounded-2xl bg-white border border-slate-200 flex items-center justify-center">
+                                    <i class="fa-solid fa-euro-sign text-slate-900"></i>
+                                </div>
+                                <p class="mt-4 font-semibold text-slate-900">Frais réduits</p>
+                                <p class="mt-2 text-sm text-slate-600">
+                                    Une approche “zéro surprise” avec une grille plus lisible.
+                                </p>
+                            </div>
+
+                            <div class="rounded-3xl border border-slate-200 bg-slate-50 p-6 hover:shadow-md transition">
+                                <div
+                                    class="h-11 w-11 rounded-2xl bg-white border border-slate-200 flex items-center justify-center">
+                                    <i class="fa-solid fa-eye text-slate-900"></i>
+                                </div>
+                                <p class="mt-4 font-semibold text-slate-900">Transparence</p>
+                                <p class="mt-2 text-sm text-slate-600">
+                                    Comparez surtout : retraits, paiements hors zone euro, options.
+                                </p>
+                            </div>
+
+                            <div class="rounded-3xl border border-slate-200 bg-slate-50 p-6 hover:shadow-md transition">
+                                <div
+                                    class="h-11 w-11 rounded-2xl bg-white border border-slate-200 flex items-center justify-center">
+                                    <i class="fa-solid fa-briefcase text-slate-900"></i>
+                                </div>
+                                <p class="mt-4 font-semibold text-slate-900">Pro & indépendants</p>
+                                <p class="mt-2 text-sm text-slate-600">
+                                    Des options dédiées pour l’activité professionnelle.
+                                </p>
+                            </div>
+
+                            <div class="rounded-3xl border border-slate-200 bg-slate-50 p-6 hover:shadow-md transition">
+                                <div
+                                    class="h-11 w-11 rounded-2xl bg-white border border-slate-200 flex items-center justify-center">
+                                    <i class="fa-solid fa-gift text-slate-900"></i>
+                                </div>
+                                <p class="mt-4 font-semibold text-slate-900">Bonus d’ouverture</p>
+                                <p class="mt-2 text-sm text-slate-600">
+                                    Peut exister selon offres et périodes (à vérifier).
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="mt-7 rounded-3xl border border-slate-200 bg-slate-900 p-7 text-white">
+                            <p class="text-sm font-semibold text-white/90">Conseil Opti’ Scan</p>
+                            <p class="mt-2 text-sm text-white/80 leading-relaxed">
+                                Avant de choisir : comparez conditions de carte premium, revenus demandés, frais à
+                                l’étranger et services pro.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Offres de cartes -->
+    <section class="relative py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex flex-col lg:flex-row items-start lg:items-end justify-between gap-8 mb-10">
+                <div class="max-w-3xl">
+                    <div
+                        class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-slate-50 border border-slate-200">
+                        <i class="fa-solid fa-credit-card text-emerald-600"></i>
+                        <span class="text-sm font-medium text-slate-700">Comparez les offres de cartes bancaires</span>
+                    </div>
+
+                    <h2 class="mt-5 text-3xl md:text-4xl font-semibold text-slate-900">
+                        3 offres de cartes selon vos revenus
+                    </h2>
+
+                    <p class="mt-4 text-slate-600 leading-relaxed">
+                        BoursoBank propose plusieurs cartes (débit immédiat ou différé) en fonction de votre situation.
+                        Le bon réflexe : choisir la carte selon votre usage (quotidien, voyages, besoins pro).
+                    </p>
+                </div>
+
+                <a href="#cta"
+                    class="inline-flex items-center gap-2 px-6 py-3 rounded-xl border border-slate-300 text-slate-700 hover:bg-slate-50 transition">
+                    Découvrir
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="rounded-[2.25rem] border border-slate-200 bg-slate-50 p-7 hover:shadow-xl transition">
+                    <div class="flex items-center justify-between">
+                        <div
+                            class="h-11 w-11 rounded-2xl bg-white border border-slate-200 flex items-center justify-center">
+                            <i class="fa-solid fa-credit-card text-slate-900"></i>
+                        </div>
+                        <span class="text-xs text-slate-500">Débit immédiat</span>
+                    </div>
+                    <p class="mt-4 font-semibold text-slate-900">Carte Essentielle</p>
+                    <p class="mt-2 text-sm text-slate-600">Une option simple pour démarrer sans complexité.</p>
+                </div>
+
+                <div
+                    class="rounded-[2.25rem] border border-slate-200 bg-white p-7 shadow-sm hover:shadow-xl transition">
+                    <div class="flex items-center justify-between">
+                        <div
+                            class="h-11 w-11 rounded-2xl bg-slate-50 border border-slate-200 flex items-center justify-center">
+                            <i class="fa-solid fa-gem text-slate-900"></i>
+                        </div>
+                        <span class="text-xs text-slate-500">Premium</span>
+                    </div>
+                    <p class="mt-4 font-semibold text-slate-900">Carte Premium</p>
+                    <p class="mt-2 text-sm text-slate-600">Pour plus de services et de confort au quotidien.</p>
+                </div>
+
+                <div class="rounded-[2.25rem] border border-slate-200 bg-slate-50 p-7 hover:shadow-xl transition">
+                    <div class="flex items-center justify-between">
+                        <div
+                            class="h-11 w-11 rounded-2xl bg-white border border-slate-200 flex items-center justify-center">
+                            <i class="fa-solid fa-repeat text-slate-900"></i>
+                        </div>
+                        <span class="text-xs text-slate-500">Débit différé</span>
+                    </div>
+                    <p class="mt-4 font-semibold text-slate-900">Carte Différée</p>
+                    <p class="mt-2 text-sm text-slate-600">Une gestion plus souple selon votre rythme de dépenses.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ouverture de compte + EasyMove -->
+    <section class="relative py-20 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
+                <div class="lg:col-span-5">
+                    <div class="rounded-[2.25rem] border border-slate-200 bg-white p-8 shadow-sm">
+                        <div
+                            class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-slate-50 border border-slate-200">
+                            <i class="fa-solid fa-user-pen text-emerald-600"></i>
+                            <span class="text-sm font-medium text-slate-700">Comment ouvrir un compte</span>
+                        </div>
+
+                        <h2 class="mt-6 text-2xl md:text-3xl font-semibold text-slate-900">
+                            Une ouverture simple, rapide, 100% en ligne
+                        </h2>
+
+                        <p class="mt-4 text-slate-600 leading-relaxed">
+                            Comme la majorité des banques en ligne, la souscription se fait en quelques minutes :
+                            formulaire en ligne,
+                            signature électronique, et dépôt des justificatifs directement depuis votre téléphone.
+                        </p>
+
+                        <div class="mt-6 space-y-3 text-sm text-slate-600">
+                            <div class="flex items-start gap-3">
+                                <i class="fa-solid fa-circle-check text-emerald-600 mt-0.5"></i>
+                                <p>Justificatif d’identité + justificatif de domicile.</p>
+                            </div>
+                            <div class="flex items-start gap-3">
+                                <i class="fa-solid fa-circle-check text-emerald-600 mt-0.5"></i>
+                                <p>Justificatif de revenus + RIB (selon conditions).</p>
+                            </div>
+                            <div class="flex items-start gap-3">
+                                <i class="fa-solid fa-circle-check text-emerald-600 mt-0.5"></i>
+                                <p>Process accessible, sans “démarches lourdes”.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-7">
+                    <div class="rounded-[2.25rem] border border-slate-200 bg-white p-8 shadow-sm">
+                        <h3 class="text-xl font-semibold text-slate-900">
+                            Changer de banque facilement avec “EasyMove”
+                        </h3>
+
+                        <p class="mt-3 text-slate-600 leading-relaxed">
+                            BoursoBank propose un service de mobilité bancaire : la banque peut se charger des démarches
+                            de transfert,
+                            y compris la mise à jour de certains prélèvements automatiques (énergie, téléphone,
+                            mutuelle, etc.),
+                            pour simplifier votre changement de domiciliation.
+                        </p>
+
+                        <div class="mt-6 grid grid-cols-1 md:grid-cols-2 gap-5">
+                            <div class="rounded-3xl border border-slate-200 bg-slate-50 p-6 hover:shadow-md transition">
+                                <div
+                                    class="h-11 w-11 rounded-2xl bg-white border border-slate-200 flex items-center justify-center">
+                                    <i class="fa-solid fa-wand-magic-sparkles text-slate-900"></i>
+                                </div>
+                                <p class="mt-4 font-semibold text-slate-900">Moins de paperasse</p>
+                                <p class="mt-2 text-sm text-slate-600">
+                                    Un transfert guidé pour gagner du temps.
+                                </p>
+                            </div>
+
+                            <div class="rounded-3xl border border-slate-200 bg-slate-50 p-6 hover:shadow-md transition">
+                                <div
+                                    class="h-11 w-11 rounded-2xl bg-white border border-slate-200 flex items-center justify-center">
+                                    <i class="fa-solid fa-arrows-rotate text-slate-900"></i>
+                                </div>
+                                <p class="mt-4 font-semibold text-slate-900">Prélèvements</p>
+                                <p class="mt-2 text-sm text-slate-600">
+                                    Mise à jour plus simple des paiements récurrents.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="mt-7 rounded-3xl border border-slate-200 bg-slate-900 p-7 text-white">
+                            <p class="text-sm font-semibold text-white/90">Astuce</p>
+                            <p class="mt-2 text-sm text-white/80 leading-relaxed">
+                                Vérifiez la liste exacte des opérations prises en charge par la mobilité bancaire au
+                                moment de l’inscription.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- App + Produits + Conditions + Service client -->
+    <section class="relative py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
+                <div class="lg:col-span-6">
+                    <div class="rounded-[2.25rem] border border-slate-200 bg-gradient-to-br from-slate-50 to-white p-8">
+                        <div
+                            class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white border border-slate-200">
+                            <i class="fa-solid fa-mobile-screen text-emerald-600"></i>
+                            <span class="text-sm font-medium text-slate-700">Application mobile</span>
+                        </div>
+
+                        <h2 class="mt-6 text-2xl md:text-3xl font-semibold text-slate-900">
+                            Une gestion agréable et cohérente sur mobile & desktop
+                        </h2>
+
+                        <p class="mt-4 text-slate-600 leading-relaxed">
+                            L’application BoursoBank vise une expérience fluide : suivi de vos dépenses, transactions,
+                            contrôle
+                            de votre compte et visibilité sur plusieurs comptes bancaires. La banque met aussi en avant
+                            une
+                            cohérence d’interface entre téléphone et ordinateur.
+                        </p>
+
+                        <div class="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div class="rounded-3xl border border-slate-200 bg-white p-6">
+                                <p class="text-sm font-semibold text-slate-900">Contrôle</p>
+                                <p class="mt-2 text-sm text-slate-600">Suivi des factures et dépenses.</p>
+                            </div>
+                            <div class="rounded-3xl border border-slate-200 bg-white p-6">
+                                <p class="text-sm font-semibold text-slate-900">Cohérence UI</p>
+                                <p class="mt-2 text-sm text-slate-600">Même logique sur mobile & PC.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-6">
+                    <div class="rounded-[2.25rem] border border-slate-200 bg-white p-8 shadow-sm">
+                        <div
+                            class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-slate-50 border border-slate-200">
+                            <i class="fa-solid fa-layer-group text-emerald-600"></i>
+                            <span class="text-sm font-medium text-slate-700">Produits & conditions</span>
+                        </div>
+
+                        <h3 class="mt-6 text-xl font-semibold text-slate-900">Produits bancaires</h3>
+                        <ul class="mt-4 space-y-2 text-sm text-slate-600">
+                            <li class="flex gap-2"><i
+                                    class="fa-solid fa-circle-check text-emerald-600 mt-0.5"></i>Chèque digital (envoi
+                                simplifié)</li>
+                            <li class="flex gap-2"><i
+                                    class="fa-solid fa-circle-check text-emerald-600 mt-0.5"></i>Commande de devises
+                                livrées à domicile</li>
+                            <li class="flex gap-2"><i
+                                    class="fa-solid fa-circle-check text-emerald-600 mt-0.5"></i>Assurances, crédits,
+                                placements & trading</li>
+                            <li class="flex gap-2"><i
+                                    class="fa-solid fa-circle-check text-emerald-600 mt-0.5"></i>Offres dédiées aux
+                                professionnels</li>
+                        </ul>
+
+                        <div class="mt-6 rounded-3xl border border-slate-200 bg-slate-50 p-6">
+                            <p class="text-sm font-semibold text-slate-900">Conditions bancaires</p>
+                            <p class="mt-2 text-sm text-slate-600 leading-relaxed">
+                                BoursoBank met en avant une flexibilité : pas de versement initial requis pour ouvrir un
+                                compte,
+                                pas d’obligation de domiciliation, et une offre d’entrée sans condition de revenus.
+                            </p>
+                        </div>
+
+                        <div class="mt-6 rounded-3xl border border-slate-200 bg-slate-900 p-7 text-white">
+                            <p class="text-sm font-semibold text-white/90">Service client</p>
+                            <p class="mt-2 text-sm text-white/80 leading-relaxed">
+                                Conseillers basés en France (horaires annoncés : lun–ven 8h–22h, sam 8h45–16h30) et
+                                contact par email.
+                                Note : absence de chat mentionnée.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Avantages + Contact -->
+    <section class="relative py-20 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
+                <div class="lg:col-span-7">
+                    <div class="rounded-[2.25rem] border border-slate-200 bg-white p-8 shadow-sm">
+                        <div
+                            class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-slate-50 border border-slate-200">
+                            <i class="fa-solid fa-award text-emerald-600"></i>
+                            <span class="text-sm font-medium text-slate-700">Avantages de BoursoBank</span>
+                        </div>
+
+                        <h2 class="mt-6 text-2xl md:text-3xl font-semibold text-slate-900">
+                            Une solution pro pratique au quotidien
+                        </h2>
+
+                        <p class="mt-4 text-slate-600 leading-relaxed">
+                            Pour les indépendants, l’intérêt se joue souvent sur la simplicité : virements,
+                            prélèvements, gestion des
+                            opérations pro, et une expérience digitale cohérente. BoursoBank met aussi en avant une
+                            offre gratuite
+                            pour les enfants, utile pour gérer un budget avec contrôle parental.
+                        </p>
+
+                        <div class="mt-6 grid grid-cols-1 md:grid-cols-2 gap-5">
+                            <div class="rounded-3xl border border-slate-200 bg-slate-50 p-6 hover:shadow-md transition">
+                                <div
+                                    class="h-11 w-11 rounded-2xl bg-white border border-slate-200 flex items-center justify-center">
+                                    <i class="fa-solid fa-briefcase text-slate-900"></i>
+                                </div>
+                                <p class="mt-4 font-semibold text-slate-900">Usage pro simplifié</p>
+                                <p class="mt-2 text-sm text-slate-600">Prélèvements, virements, gestion plus nette.</p>
+                            </div>
+
+                            <div class="rounded-3xl border border-slate-200 bg-slate-50 p-6 hover:shadow-md transition">
+                                <div
+                                    class="h-11 w-11 rounded-2xl bg-white border border-slate-200 flex items-center justify-center">
+                                    <i class="fa-solid fa-child-reaching text-slate-900"></i>
+                                </div>
+                                <p class="mt-4 font-semibold text-slate-900">Compte enfant</p>
+                                <p class="mt-2 text-sm text-slate-600">Option gratuite avec contrôle parental.</p>
+                            </div>
+                        </div>
+
+                        <div class="mt-7 rounded-3xl border border-slate-200 bg-slate-900 p-7 text-white">
+                            <p class="text-sm font-semibold text-white/90">Note</p>
+                            <p class="mt-2 text-sm text-white/80 leading-relaxed">
+                                Certaines affirmations (ex : “banque la plus économique… année consécutive”) peuvent
+                                dépendre d’études/labels.
+                                Affichez une source si vous la publiez.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-5">
+                    <div class="rounded-[2.25rem] border border-slate-200 bg-white p-8 shadow-sm">
+                        <div
+                            class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-slate-50 border border-slate-200">
+                            <i class="fa-solid fa-location-dot text-emerald-600"></i>
+                            <span class="text-sm font-medium text-slate-700">Informations de contact</span>
+                        </div>
+
+                        <p class="mt-6 text-sm font-semibold text-slate-900">BoursoBank</p>
+                        <p class="mt-2 text-sm text-slate-600 leading-relaxed">
+                            44 Rue Traversière<br />
+                            92772 Boulogne-Billancourt
+                        </p>
+
+                        <a href="contact.html"
+                            class="inline-flex items-center justify-center gap-2 mt-6 w-full px-7 py-3 rounded-xl border border-slate-300 text-slate-700 hover:bg-slate-50 transition">
+                            Contacter Opti’ Scan
+                            <i class="fa-solid fa-headset"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA + Editorial -->
+    <section id="cta" class="relative py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="rounded-[2.5rem] border border-slate-200 bg-gradient-to-br from-slate-50 to-white p-10 md:p-12">
+                <div class="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-8">
+                    <div class="max-w-3xl">
+                        <div
+                            class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white border border-slate-200">
+                            <i class="fa-solid fa-arrow-pointer text-emerald-600"></i>
+                            <span class="text-sm font-medium text-slate-700">Passer à l’action</span>
+                        </div>
+
+                        <h2 class="mt-6 text-2xl md:text-3xl font-semibold text-slate-900">
+                            Prêt à comparer BoursoBank avec d’autres banques en ligne ?
+                        </h2>
+
+                        <p class="mt-4 text-slate-600 leading-relaxed">
+                            Vérifiez les conditions de carte, l’usage pro, la mobilité bancaire, et les frais
+                            spécifiques à votre profil.
+                            Ensuite, choisissez l’offre la plus cohérente avec votre quotidien.
+                        </p>
+                    </div>
+
+                    <div class="flex flex-col sm:flex-row gap-3 w-full lg:w-auto">
+                        <a href="#"
+                            class="inline-flex items-center justify-center gap-2 px-7 py-3 rounded-xl bg-slate-900 text-white font-medium hover:opacity-90 transition w-full sm:w-auto">
+                            Visiter le site
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                        <a href="contact.html"
+                            class="inline-flex items-center justify-center gap-2 px-7 py-3 rounded-xl border border-slate-300 text-slate-700 hover:bg-white transition w-full sm:w-auto">
+                            Demander un avis
+                            <i class="fa-solid fa-headset"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="mt-8 flex flex-wrap items-center gap-4 text-xs text-slate-500">
+                    <span class="inline-flex items-center gap-2">
+                        <i class="fa-solid fa-circle-info text-emerald-600"></i>
+                        Informations indicatives : consultez le site officiel BoursoBank pour les conditions à jour.
+                    </span>
+                </div>
+            </div>
+
+            <div class="mt-10 rounded-3xl border border-slate-200 bg-white p-7">
+                <p class="text-sm font-semibold text-slate-900">À propos de l’équipe éditoriale</p>
+                <p class="mt-2 text-sm text-slate-600 leading-relaxed">
+                    Notre équipe de rédaction est composée d’éditeurs spécialisés dans le secteur financier.
+                    Notre objectif : faciliter le processus de choix du service financier qui répond le mieux à vos
+                    besoins.
+                </p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer Section -->
+    <div id="footer"></div>
+
+
+    <!-- Scripts -->
+    <script src="./docs/javascript/navbar.js"></script>
+    <script src="./docs/javascript/footer.js"></script>
+    <script src="https://unpkg.com/lenis@1.3.1/dist/lenis.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script src="./docs/javascript/global.js"></script>
+
+
+</body>
+
+
+</html>

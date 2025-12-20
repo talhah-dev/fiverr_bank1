@@ -20,10 +20,10 @@ footer.innerHTML = `
                         Comparer
                     </h4>
                     <ul class="space-y-3 text-sm text-slate-600">
-                        <li><a href="#" class="hover:text-slate-900">Banques</a></li>
-                        <li><a href="#" class="hover:text-slate-900">Banques Pro</a></li>
-                        <li><a href="#" class="hover:text-slate-900">Assurances</a></li>
-                        <li><a href="#" class="hover:text-slate-900">Services financiers</a></li>
+                        <li><a href="#/index.html" class="hover:text-slate-900">Banques</a></li>
+                        <li><a href="/bank-pros.html" class="hover:text-slate-900">Banques Pro</a></li>
+                        <li><a href="/assurances.html" class="hover:text-slate-900">Assurances</a></li>
+                        <li><a href="/notre-histoire.html" class="hover:text-slate-900">Notre Histoire</a></li>
                     </ul>
                 </div>
 
@@ -32,10 +32,8 @@ footer.innerHTML = `
                         Ressources
                     </h4>
                     <ul class="space-y-3 text-sm text-slate-600">
-                        <li><a href="#" class="hover:text-slate-900">Guides & conseils</a></li>
-                        <li><a href="#" class="hover:text-slate-900">Classements</a></li>
                         <li><a href="/faq.html" class="hover:text-slate-900">FAQ</a></li>
-                        <li><a href="#" class="hover:text-slate-900">Contact</a></li>
+                        <li><a href="/contact.html" class="hover:text-slate-900">Contact</a></li>
                     </ul>
                 </div>
 
@@ -44,10 +42,8 @@ footer.innerHTML = `
                         Légal
                     </h4>
                     <ul class="space-y-3 text-sm text-slate-600">
-                        <li><a href="#" class="hover:text-slate-900">Mentions légales</a></li>
-                        <li><a href="#" class="hover:text-slate-900">Politique de confidentialité</a></li>
-                        <li><a href="#" class="hover:text-slate-900">Cookies</a></li>
-                        <li><a href="#" class="hover:text-slate-900">Transparence</a></li>
+                        <li><a href="/mentions-legales.html" class="hover:text-slate-900">Mentions légales</a></li>
+                        <li><a href="/privacy-policy.html" class="hover:text-slate-900">Politique de confidentialité</a></li>
                     </ul>
                 </div>
 
