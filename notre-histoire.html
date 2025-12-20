@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Opti’ Scan | Comparateur banques, assurances & services financiers</title>
+
+    <meta name="description"
+        content="Opti’ Scan compare les meilleures offres bancaires, assurances et services financiers. Trouvez rapidement l’offre la plus adaptée à vos besoins avec une comparaison claire et transparente." />
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <link rel="canonical" href="https://opti-scan.fr/" />
+
+    <!-- Open Graph -->
+    <meta property="og:locale" content="fr_FR" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Opti’ Scan" />
+    <meta property="og:title" content="Opti’ Scan | Comparateur banques, assurances & services financiers" />
+    <meta property="og:description"
+        content="Comparez les meilleures banques en ligne, assurances et services financiers. Faites un choix éclairé avec Opti’ Scan." />
+    <meta property="og:url" content="https://opti-scan.fr/" />
+    <meta property="og:image" content="https://opti-scan.fr/docs/assets/images/og-image.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Opti’ Scan | Comparateur banques, assurances & services financiers" />
+    <meta name="twitter:description"
+        content="Comparez les meilleures offres bancaires, assurances et services financiers en toute transparence." />
+    <meta name="twitter:image" content="https://opti-scan.fr/docs/assets/images/og-image.png" />
+
+    <!-- Icons -->
+    <link rel="icon" type="image/png" href="/docs/assets/images/favicon.png" />
+    <link rel="apple-touch-icon" href="/docs/assets/images/apple-touch-icon.png" />
+
+    <!-- Preconnect -->
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin />
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
+    <link rel="preconnect" href="https://unpkg.com" crossorigin />
+
+    <link rel="stylesheet" href="/docs/Style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://unpkg.com/lenis@1.3.1/dist/lenis.css" />
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+
+    <!-- JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Opti’ Scan",
+      "url": "https://opti-scan.fr/",
+      "inLanguage": "fr-FR",
+      "description": "Comparateur de banques, assurances et services financiers.",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://opti-scan.fr/?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    }
+  </script>
+</head>
+
+
+
+<body class="">
+
+    <!-- ----------------------------components------------------------------ -->
+    <!-- Loader -->
+    <div id="loader"></div>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop"
+        class="fixed bottom-6 right-6 z-50 h-12 w-12 rounded-2xl bg-slate-900 text-white shadow-lg opacity-0 pointer-events-none translate-y-3 transition-all duration-300 hover:opacity-90">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <script>
+        const backToTop = document.getElementById("backToTop");
+
+        window.addEventListener("scroll", () => {
+            if (window.scrollY > 200) {
+                backToTop.classList.remove("opacity-0", "pointer-events-none", "translate-y-3");
+                backToTop.classList.add("opacity-100", "translate-y-0");
+            } else {
+                backToTop.classList.add("opacity-0", "pointer-events-none", "translate-y-3");
+                backToTop.classList.remove("opacity-100", "translate-y-0");
+            }
+        });
+
+        backToTop.addEventListener("click", () => {
+            window.scrollTo({ top: 0, behavior: "smooth" });
+        });
+    </script>
+
+
+    <!-- ----------------------------components------------------------------ -->
+
+
+
+
+    <!-- Navbar -->
+    <div id="navbar"></div>
+
+
+    <!-- Notre Histoire – Hero Section -->
+    <section class="relative min-h-[85vh] flex items-center bg-white overflow-hidden">
+        <div class="absolute inset-0">
+            <div class="absolute top-0 left-1/4 w-[500px] h-[500px] bg-blue-500/10 rounded-full blur-[120px]"></div>
+            <div class="absolute bottom-0 right-1/4 w-[500px] h-[500px] bg-emerald-500/10 rounded-full blur-[120px]">
+            </div>
+        </div>
+
+        <div class="relative max-w-7xl mx-auto px-6 w-full">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+
+                <!-- Left Content -->
+                <div class="lg:col-span-7 space-y-8">
+                    <div
+                        class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-slate-100 border border-slate-200">
+                        <i class="fa-solid fa-book-open text-slate-700"></i>
+                        <span class="text-sm font-medium text-slate-700">notre histoire</span>
+                    </div>
+
+                    <h1 class="text-4xl md:text-5xl xl:text-6xl font-semibold tracking-tight text-slate-900">
+                        Une vision simple :
+                        <span class="block text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-emerald-500">
+                            rendre les choix financiers plus clairs
+                        </span>
+                    </h1>
+
+                    <p class="text-lg text-slate-600 max-w-2xl leading-relaxed">
+                        Opti’ Scan est né d’un constat simple : choisir une banque ou une assurance est souvent
+                        complexe,
+                        opaque et chronophage. Nous avons voulu créer un espace où l’information est lisible, utile
+                        et réellement orientée vers vos besoins.
+                    </p>
+
+                    <div class="flex flex-wrap gap-6 pt-2 text-sm text-slate-600">
+                        <span class="flex items-center gap-2">
+                            <i class="fa-solid fa-scale-balanced text-emerald-600"></i>
+                            Transparence
+                        </span>
+                        <span class="flex items-center gap-2">
+                            <i class="fa-solid fa-magnifying-glass-chart text-emerald-600"></i>
+                            Comparaison utile
+                        </span>
+                        <span class="flex items-center gap-2">
+                            <i class="fa-solid fa-user-check text-emerald-600"></i>
+                            Décisions éclairées
+                        </span>
+                    </div>
+                </div>
+
+                <!-- Right Visual / Timeline Card -->
+                <div class="lg:col-span-5">
+                    <div class="relative rounded-[2.5rem] border border-slate-200 bg-white shadow-xl p-8 md:p-10">
+
+                        <div
+                            class="absolute -top-6 -right-6 w-20 h-20 rounded-2xl bg-slate-900 text-white flex items-center justify-center shadow-lg">
+                            <i class="fa-solid fa-compass"></i>
+                        </div>
+
+                        <p class="text-sm text-slate-500">Notre démarche</p>
+                        <h2 class="mt-2 text-xl font-semibold text-slate-900">
+                            De l’idée à la plateforme
+                        </h2>
+
+                        <div class="mt-6 space-y-6">
+                            <div class="flex items-start gap-4">
+                                <div
+                                    class="h-10 w-10 rounded-xl bg-slate-100 border border-slate-200 flex items-center justify-center">
+                                    <i class="fa-solid fa-lightbulb text-slate-900"></i>
+                                </div>
+                                <div>
+                                    <p class="font-medium text-slate-900">Le constat</p>
+                                    <p class="text-sm text-slate-600 mt-1">
+                                        Trop d’offres, trop peu de clarté pour faire un choix serein.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start gap-4">
+                                <div
+                                    class="h-10 w-10 rounded-xl bg-slate-100 border border-slate-200 flex items-center justify-center">
+                                    <i class="fa-solid fa-diagram-project text-slate-900"></i>
+                                </div>
+                                <div>
+                                    <p class="font-medium text-slate-900">La construction</p>
+                                    <p class="text-sm text-slate-600 mt-1">
+                                        Des critères objectifs, des comparaisons simples et une lecture rapide.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start gap-4">
+                                <div
+                                    class="h-10 w-10 rounded-xl bg-slate-100 border border-slate-200 flex items-center justify-center">
+                                    <i class="fa-solid fa-flag text-slate-900"></i>
+                                </div>
+                                <div>
+                                    <p class="font-medium text-slate-900">Aujourd’hui</p>
+                                    <p class="text-sm text-slate-600 mt-1">
+                                        Une plateforme indépendante pour comparer, comprendre et décider.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <a href="#valeurs"
+                            class="inline-flex items-center gap-2 mt-8 text-sm font-medium text-slate-900 hover:opacity-80 transition">
+                            Découvrir nos valeurs
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Notre Histoire – About Opti’ Scan -->
+    <section class="relative py-24 bg-slate-50 overflow-hidden">
+        <div class="absolute -top-28 -left-28 w-[420px] h-[420px] bg-blue-500/10 rounded-full blur-3xl"></div>
+        <div class="absolute -bottom-28 -right-28 w-[420px] h-[420px] bg-emerald-500/10 rounded-full blur-3xl"></div>
+
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
+
+                <div class="lg:col-span-5">
+                    <div class="rounded-[2.25rem] border border-slate-200 bg-white p-8 md:p-10 shadow-sm">
+                        <div
+                            class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-slate-50 border border-slate-200">
+                            <i class="fa-solid fa-circle-nodes text-emerald-600"></i>
+                            <span class="text-sm font-medium text-slate-700">À propos d’Opti’ Scan</span>
+                        </div>
+
+                        <h2 class="mt-6 text-3xl md:text-4xl font-semibold text-slate-900">
+                            Comparer devient plus simple quand tout est clair
+                        </h2>
+
+                        <p class="mt-5 text-slate-600 leading-relaxed">
+                            Opti’ Scan est une plateforme de comparaison pensée pour vous aider à choisir plus vite et
+                            plus sereinement.
+                            Nous mettons en avant des sélections de références, des repères concrets et des explications
+                            utiles
+                            pour éviter les décisions au hasard.
+                        </p>
+
+                        <div class="mt-8 grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div class="rounded-2xl border border-slate-200 bg-slate-50 p-5">
+                                <p class="text-sm font-semibold text-slate-900">Sélections</p>
+                                <p class="text-sm text-slate-600 mt-1">
+                                    Des offres mises en avant selon des critères lisibles.
+                                </p>
+                            </div>
+                            <div class="rounded-2xl border border-slate-200 bg-slate-50 p-5">
+                                <p class="text-sm font-semibold text-slate-900">Analyses</p>
+                                <p class="text-sm text-slate-600 mt-1">
+                                    Des points clés et conseils pour comprendre avant de choisir.
+                                </p>
+                            </div>
+                        </div>
+
+                        <a href="#methodologie"
+                            class="inline-flex items-center gap-2 mt-8 text-sm font-medium text-slate-900 hover:opacity-80 transition">
+                            Voir notre méthodologie
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-7">
+                    <div class="rounded-[2.25rem] border border-slate-200 bg-white p-8 md:p-10 shadow-sm">
+                        <div class="flex items-start justify-between gap-6">
+                            <div>
+                                <p class="text-sm text-slate-500">Notre histoire</p>
+                                <h3 class="mt-2 text-xl md:text-2xl font-semibold text-slate-900">
+                                    Une mission née d’un besoin très concret
+                                </h3>
+                            </div>
+
+                            <div
+                                class="hidden md:flex items-center gap-2 px-4 py-2 rounded-full bg-slate-900 text-white text-sm">
+                                <i class="fa-solid fa-flag"></i>
+                                <span>Depuis 2018</span>
+                            </div>
+                        </div>
+
+                        <p class="mt-5 text-slate-600 leading-relaxed">
+                            Opti’ Scan a été créé avec une idée simple : aider les internautes à faire des choix plus
+                            éclairés
+                            dans un univers où les informations sont souvent dispersées, trop techniques ou parfois
+                            difficiles à comparer.
+                        </p>
+
+                        <p class="mt-4 text-slate-600 leading-relaxed">
+                            Dès le départ, nous avons voulu simplifier l’expérience : proposer des sélections fiables,
+                            des critères compréhensibles, et un contenu utile pour que chacun puisse comparer en
+                            confiance —
+                            sans perdre du temps.
+                        </p>
+
+                        <div class="mt-8 grid grid-cols-1 md:grid-cols-3 gap-5">
+                            <div class="rounded-3xl border border-slate-200 bg-slate-50 p-6 hover:shadow-md transition">
+                                <div
+                                    class="h-12 w-12 rounded-2xl bg-white border border-slate-200 flex items-center justify-center">
+                                    <i class="fa-solid fa-magnifying-glass-chart text-slate-900"></i>
+                                </div>
+                                <p class="mt-4 font-semibold text-slate-900">Clarté</p>
+                                <p class="mt-2 text-sm text-slate-600">
+                                    Mettre en avant l’essentiel pour comparer rapidement.
+                                </p>
+                            </div>
+
+                            <div class="rounded-3xl border border-slate-200 bg-slate-50 p-6 hover:shadow-md transition">
+                                <div
+                                    class="h-12 w-12 rounded-2xl bg-white border border-slate-200 flex items-center justify-center">
+                                    <i class="fa-solid fa-scale-balanced text-slate-900"></i>
+                                </div>
+                                <p class="mt-4 font-semibold text-slate-900">Rigueur</p>
+                                <p class="mt-2 text-sm text-slate-600">
+                                    Des critères cohérents, expliqués et alignés avec vos besoins.
+                                </p>
+                            </div>
+
+                            <div class="rounded-3xl border border-slate-200 bg-slate-50 p-6 hover:shadow-md transition">
+                                <div
+                                    class="h-12 w-12 rounded-2xl bg-white border border-slate-200 flex items-center justify-center">
+                                    <i class="fa-solid fa-user-check text-slate-900"></i>
+                                </div>
+                                <p class="mt-4 font-semibold text-slate-900">Confiance</p>
+                                <p class="mt-2 text-sm text-slate-600">
+                                    Aider à décider sereinement, avec transparence.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="mt-10 rounded-3xl bg-gradient-to-br from-slate-900 to-slate-800 p-8 text-white">
+                            <div class="flex items-start gap-4">
+                                <div
+                                    class="h-12 w-12 rounded-2xl bg-white/10 border border-white/15 flex items-center justify-center">
+                                    <i class="fa-solid fa-heart text-white"></i>
+                                </div>
+                                <div>
+                                    <p class="text-sm font-semibold text-white/90">Notre objectif</p>
+                                    <p class="mt-2 text-sm text-white/80 leading-relaxed">
+                                        Rendre vos comparaisons plus simples et vos décisions plus sûres, grâce à des
+                                        sélections utiles
+                                        et des explications compréhensibles — pour que vous puissiez avancer avec
+                                        confiance.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Notre Méthodologie -->
+    <section id="methodologie" class="relative py-24 bg-white overflow-hidden">
+        <div class="absolute -top-32 -left-32 w-[420px] h-[420px] bg-blue-500/10 rounded-full blur-3xl"></div>
+        <div class="absolute -bottom-32 -right-32 w-[420px] h-[420px] bg-emerald-500/10 rounded-full blur-3xl"></div>
+
+        <div class="relative max-w-7xl mx-auto px-6">
+
+            <div class="max-w-3xl mb-14">
+                <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-slate-50 border border-slate-200">
+                    <i class="fa-solid fa-diagram-project text-emerald-600"></i>
+                    <span class="text-sm font-medium text-slate-700">Notre méthodologie</span>
+                </div>
+
+                <h2 class="mt-5 text-3xl md:text-4xl font-semibold text-slate-900">
+                    Comment nous construisons nos sélections
+                </h2>
+
+                <p class="mt-4 text-slate-600 leading-relaxed">
+                    Chaque sélection publiée sur Opti’ Scan repose sur un travail structuré, collaboratif et rigoureux.
+                    Notre objectif est de transformer une grande quantité d’informations en comparaisons simples,
+                    utiles et faciles à comprendre.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+
+                <!-- Step 1 -->
+                <div class="group rounded-3xl border border-slate-200 bg-slate-50 p-8 hover:shadow-xl transition">
+                    <div class="flex items-center gap-4 mb-5">
+                        <div
+                            class="h-12 w-12 rounded-2xl bg-white border border-slate-200 flex items-center justify-center">
+                            <i class="fa-solid fa-magnifying-glass text-slate-900"></i>
+                        </div>
+                        <p class="text-sm font-semibold text-slate-900">Étape 1</p>
+                    </div>
+
+                    <h3 class="text-lg font-semibold text-slate-900">
+                        Recherche & veille
+                    </h3>
+                    <p class="mt-3 text-sm text-slate-600 leading-relaxed">
+                        Nos équipes analysent le marché, explorent les offres disponibles et identifient
+                        les solutions les plus pertinentes selon des critères précis : tarifs, conditions,
+                        services inclus et retours utilisateurs.
+                    </p>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="group rounded-3xl border border-slate-200 bg-slate-50 p-8 hover:shadow-xl transition">
+                    <div class="flex items-center gap-4 mb-5">
+                        <div
+                            class="h-12 w-12 rounded-2xl bg-white border border-slate-200 flex items-center justify-center">
+                            <i class="fa-solid fa-database text-slate-900"></i>
+                        </div>
+                        <p class="text-sm font-semibold text-slate-900">Étape 2</p>
+                    </div>
+
+                    <h3 class="text-lg font-semibold text-slate-900">
+                        Analyse des données
+                    </h3>
+                    <p class="mt-3 text-sm text-slate-600 leading-relaxed">
+                        Les données collectées sont étudiées afin de détecter les tendances,
+                        comparer objectivement les offres et extraire des indicateurs utiles
+                        pour affiner les sélections proposées.
+                    </p>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="group rounded-3xl border border-slate-200 bg-slate-50 p-8 hover:shadow-xl transition">
+                    <div class="flex items-center gap-4 mb-5">
+                        <div
+                            class="h-12 w-12 rounded-2xl bg-white border border-slate-200 flex items-center justify-center">
+                            <i class="fa-solid fa-sliders text-slate-900"></i>
+                        </div>
+                        <p class="text-sm font-semibold text-slate-900">Étape 3</p>
+                    </div>
+
+                    <h3 class="text-lg font-semibold text-slate-900">
+                        Sélections personnalisées
+                    </h3>
+                    <p class="mt-3 text-sm text-slate-600 leading-relaxed">
+                        Les résultats sont ensuite structurés pour proposer des classements clairs,
+                        adaptés à différents profils et besoins, afin de vous aider à choisir
+                        plus rapidement et en toute confiance.
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="mt-14 grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+
+                <div class="rounded-3xl border border-slate-200 bg-white p-8">
+                    <h4 class="text-lg font-semibold text-slate-900">
+                        Une approche collaborative
+                    </h4>
+                    <p class="mt-3 text-slate-600 leading-relaxed">
+                        Produit, contenu, data et technologie travaillent ensemble pour garantir
+                        la cohérence, la fiabilité et la lisibilité de chaque comparaison publiée.
+                    </p>
+                </div>
+
+                <div class="rounded-3xl border border-slate-200 bg-slate-900 p-8 text-white">
+                    <h4 class="text-lg font-semibold">
+                        Notre engagement
+                    </h4>
+                    <p class="mt-3 text-white/80 leading-relaxed">
+                        Vous fournir des outils concrets pour prendre des décisions éclairées,
+                        basées sur des informations structurées, actualisées et compréhensibles.
+                    </p>
+                    <a href="#comparatifs"
+                        class="inline-flex items-center gap-2 mt-6 text-sm font-medium text-white hover:opacity-90 transition">
+                        Découvrir nos comparatifs
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- Ressources & Vision -->
+    <section class="relative py-24 bg-slate-50 overflow-hidden">
+        <div class="absolute top-1/3 -left-32 w-[420px] h-[420px] bg-indigo-500/10 rounded-full blur-3xl"></div>
+        <div class="absolute bottom-0 -right-32 w-[420px] h-[420px] bg-emerald-500/10 rounded-full blur-3xl"></div>
+
+        <div class="relative max-w-7xl mx-auto px-6">
+
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+
+                <!-- Left visual / tools -->
+                <div class="lg:col-span-5">
+                    <div class="relative rounded-[2.5rem] border border-slate-200 bg-white p-8 md:p-10 shadow-xl">
+
+                        <div
+                            class="absolute -top-6 -left-6 h-14 w-14 rounded-2xl bg-slate-900 text-white flex items-center justify-center shadow-lg">
+                            <i class="fa-solid fa-toolbox"></i>
+                        </div>
+
+                        <p class="text-sm text-slate-500">Ce que nous développons</p>
+                        <h3 class="mt-2 text-xl md:text-2xl font-semibold text-slate-900">
+                            Des outils pensés pour décider avec confiance
+                        </h3>
+
+                        <div class="mt-6 space-y-5">
+                            <div class="flex items-start gap-4">
+                                <div
+                                    class="h-10 w-10 rounded-xl bg-slate-50 border border-slate-200 flex items-center justify-center">
+                                    <i class="fa-solid fa-filter text-slate-900"></i>
+                                </div>
+                                <p class="text-sm text-slate-600 leading-relaxed">
+                                    Des filtres intelligents pour affiner rapidement les résultats selon vos critères
+                                    réels.
+                                </p>
+                            </div>
+
+                            <div class="flex items-start gap-4">
+                                <div
+                                    class="h-10 w-10 rounded-xl bg-slate-50 border border-slate-200 flex items-center justify-center">
+                                    <i class="fa-solid fa-chart-simple text-slate-900"></i>
+                                </div>
+                                <p class="text-sm text-slate-600 leading-relaxed">
+                                    Des comparaisons visuelles pour comprendre les différences en un coup d’œil.
+                                </p>
+                            </div>
+
+                            <div class="flex items-start gap-4">
+                                <div
+                                    class="h-10 w-10 rounded-xl bg-slate-50 border border-slate-200 flex items-center justify-center">
+                                    <i class="fa-solid fa-clipboard-check text-slate-900"></i>
+                                </div>
+                                <p class="text-sm text-slate-600 leading-relaxed">
+                                    Des contenus pratiques pour valider votre choix avant de passer à l’action.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right content -->
+                <div class="lg:col-span-7 space-y-8">
+                    <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white border border-slate-200">
+                        <i class="fa-solid fa-rocket text-emerald-600"></i>
+                        <span class="text-sm font-medium text-slate-700">Notre vision</span>
+                    </div>
+
+                    <h2 class="text-3xl md:text-4xl font-semibold text-slate-900">
+                        Des ressources avancées pour des choix réfléchis
+                    </h2>
+
+                    <p class="text-slate-600 leading-relaxed max-w-2xl">
+                        Chez Opti’ Scan, nous continuons à concevoir et améliorer des outils puissants pour accompagner
+                        chaque utilisateur dans ses décisions. Nous sommes convaincus qu’une information fiable,
+                        structurée et accessible est le véritable levier d’un choix réussi.
+                    </p>
+
+                    <p class="text-slate-600 leading-relaxed max-w-2xl">
+                        Notre évolution repose sur une croissance maîtrisée, guidée par l’écoute, la transparence
+                        et l’amélioration continue de l’expérience utilisateur. Chaque nouveauté développée vise
+                        à rendre vos recherches plus simples, plus rapides et plus pertinentes.
+                    </p>
+
+                    <div class="flex flex-wrap gap-6 pt-4 text-sm text-slate-600">
+                        <span class="flex items-center gap-2">
+                            <i class="fa-solid fa-circle-check text-emerald-600"></i>
+                            Innovation continue
+                        </span>
+                        <span class="flex items-center gap-2">
+                            <i class="fa-solid fa-circle-check text-emerald-600"></i>
+                            Information fiable
+                        </span>
+                        <span class="flex items-center gap-2">
+                            <i class="fa-solid fa-circle-check text-emerald-600"></i>
+                            Satisfaction utilisateur
+                        </span>
+                    </div>
+
+                    <div class="pt-6">
+                        <a href="#comparatifs"
+                            class="inline-flex items-center justify-center gap-2 px-7 py-3 rounded-xl bg-slate-900 text-white font-medium hover:opacity-90 transition">
+                            Explorer nos comparatifs
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Notre Équipe -->
+    <section class="relative py-24 bg-white overflow-hidden">
+        <div class="absolute -top-24 right-1/4 w-[420px] h-[420px] bg-blue-500/10 rounded-full blur-3xl"></div>
+        <div class="absolute -bottom-24 left-1/4 w-[420px] h-[420px] bg-emerald-500/10 rounded-full blur-3xl"></div>
+
+        <div class="relative max-w-7xl mx-auto px-6">
+
+            <div class="max-w-3xl mb-14">
+                <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-slate-50 border border-slate-200">
+                    <i class="fa-solid fa-people-group text-emerald-600"></i>
+                    <span class="text-sm font-medium text-slate-700">Notre équipe</span>
+                </div>
+
+                <h2 class="mt-5 text-3xl md:text-4xl font-semibold text-slate-900">
+                    Une équipe dédiée à vos décisions
+                </h2>
+
+                <p class="mt-4 text-slate-600 leading-relaxed">
+                    Derrière Opti’ Scan, une équipe de profils complémentaires travaille chaque jour
+                    avec un objectif commun : rendre vos comparaisons plus utiles, plus lisibles
+                    et réellement adaptées à vos besoins.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+
+                <!-- Team Values / Text -->
+                <div class="lg:col-span-6 space-y-6">
+                    <p class="text-slate-600 leading-relaxed">
+                        Nos équipes réunissent des experts en analyse de données, en contenu éditorial,
+                        en produit et en technologie. Cette diversité de compétences nous permet
+                        d’évaluer les offres sous plusieurs angles et de proposer des sélections
+                        pertinentes et cohérentes.
+                    </p>
+
+                    <p class="text-slate-600 leading-relaxed">
+                        Animés par une culture de l’amélioration continue, nous testons, ajustons
+                        et enrichissons constamment nos outils pour accompagner au mieux
+                        chaque utilisateur dans ses choix.
+                    </p>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-5 pt-4">
+                        <div class="rounded-3xl border border-slate-200 bg-slate-50 p-6 hover:shadow-md transition">
+                            <div
+                                class="h-11 w-11 rounded-2xl bg-white border border-slate-200 flex items-center justify-center">
+                                <i class="fa-solid fa-user-tie text-slate-900"></i>
+                            </div>
+                            <p class="mt-4 font-semibold text-slate-900">Expertise métier</p>
+                            <p class="mt-2 text-sm text-slate-600">
+                                Des spécialistes dans chaque domaine clé de la comparaison.
+                            </p>
+                        </div>
+
+                        <div class="rounded-3xl border border-slate-200 bg-slate-50 p-6 hover:shadow-md transition">
+                            <div
+                                class="h-11 w-11 rounded-2xl bg-white border border-slate-200 flex items-center justify-center">
+                                <i class="fa-solid fa-seedling text-slate-900"></i>
+                            </div>
+                            <p class="mt-4 font-semibold text-slate-900">Amélioration continue</p>
+                            <p class="mt-2 text-sm text-slate-600">
+                                Des outils et contenus en constante évolution.
+                            </p>
+                        </div>
+
+                        <div class="rounded-3xl border border-slate-200 bg-slate-50 p-6 hover:shadow-md transition">
+                            <div
+                                class="h-11 w-11 rounded-2xl bg-white border border-slate-200 flex items-center justify-center">
+                                <i class="fa-solid fa-users-gear text-slate-900"></i>
+                            </div>
+                            <p class="mt-4 font-semibold text-slate-900">Travail collaboratif</p>
+                            <p class="mt-2 text-sm text-slate-600">
+                                Des équipes qui avancent ensemble pour plus de cohérence.
+                            </p>
+                        </div>
+
+                        <div class="rounded-3xl border border-slate-200 bg-slate-50 p-6 hover:shadow-md transition">
+                            <div
+                                class="h-11 w-11 rounded-2xl bg-white border border-slate-200 flex items-center justify-center">
+                                <i class="fa-solid fa-handshake-angle text-slate-900"></i>
+                            </div>
+                            <p class="mt-4 font-semibold text-slate-900">Orientation utilisateur</p>
+                            <p class="mt-2 text-sm text-slate-600">
+                                Chaque décision est pensée pour mieux vous servir.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Visual Card -->
+                <div class="lg:col-span-6">
+                    <div class="relative rounded-[2.5rem] border border-slate-200 bg-white p-10 shadow-xl">
+
+                        <div
+                            class="absolute -top-6 -right-6 w-16 h-16 rounded-2xl bg-slate-900 text-white flex items-center justify-center shadow-lg">
+                            <i class="fa-solid fa-heart"></i>
+                        </div>
+
+                        <p class="text-sm text-slate-500">Notre engagement</p>
+                        <h3 class="mt-2 text-xl md:text-2xl font-semibold text-slate-900">
+                            Mettre l’humain au cœur de la comparaison
+                        </h3>
+
+                        <p class="mt-4 text-slate-600 leading-relaxed">
+                            L’expertise de notre équipe, associée à une forte culture produit,
+                            nous permet de proposer des sélections claires, personnalisées
+                            et réellement utiles. Notre priorité reste la satisfaction
+                            et la confiance de nos utilisateurs.
+                        </p>
+
+                        <div class="mt-6 flex flex-wrap gap-4 text-sm text-slate-600">
+                            <span class="flex items-center gap-2">
+                                <i class="fa-solid fa-circle-check text-emerald-600"></i>
+                                Écoute active
+                            </span>
+                            <span class="flex items-center gap-2">
+                                <i class="fa-solid fa-circle-check text-emerald-600"></i>
+                                Transparence
+                            </span>
+                            <span class="flex items-center gap-2">
+                                <i class="fa-solid fa-circle-check text-emerald-600"></i>
+                                Fiabilité
+                            </span>
+                        </div>
+
+                        <a href="#contact"
+                            class="inline-flex items-center gap-2 mt-8 text-sm font-medium text-slate-900 hover:opacity-80 transition">
+                            Nous contacter
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+
+    <!-- Footer Section -->
+    <div id="footer"></div>
+
+
+    <!-- Scripts -->
+    <script src="./docs/javascript/navbar.js"></script>
+    <script src="./docs/javascript/footer.js"></script>
+    <script src="https://unpkg.com/lenis@1.3.1/dist/lenis.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script src="./docs/javascript/global.js"></script>
+
+
+</body>
+
+
+</html>
