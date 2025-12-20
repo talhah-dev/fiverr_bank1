@@ -1,0 +1,35 @@
+# robots.txt for https://www.betrugsexperten.de/
+
+User-agent: *
+# Allow indexing of all public pages
+Allow: /
+
+# Keep crawlers out of system/utility paths (adjust as needed)
+Disallow: /cgi-bin/
+Disallow: /admin/
+Disallow: /login/
+Disallow: /tmp/
+Disallow: /private/
+Disallow: /cart/
+Disallow: /checkout/
+
+# Avoid crawling duplicate/tracking URLs
+Disallow: /search
+Disallow: /?s=
+Disallow: /*?replytocom=
+Disallow: /*?utm_*
+Disallow: /*?fbclid=*
+Disallow: /*?gclid=*
+
+# Ensure assets are crawlable (important for rendering)
+Allow: /*.js$
+Allow: /*.css$
+Allow: /assets/
+Allow: /images/
+Allow: /static/
+
+# Don’t index source files directly (optional)
+Disallow: /*.php$
+Disallow: /*.inc$
+
+Sitemap: http://bonusbros777.com/sitemap.xml

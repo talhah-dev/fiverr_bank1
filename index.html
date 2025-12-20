@@ -1,0 +1,1202 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Opti’ Scan | Comparateur banques, assurances & services financiers</title>
+
+    <meta name="description"
+        content="Opti’ Scan compare les meilleures offres bancaires, assurances et services financiers. Trouvez rapidement l’offre la plus adaptée à vos besoins avec une comparaison claire et transparente." />
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <link rel="canonical" href="https://opti-scan.fr/" />
+
+    <!-- Open Graph -->
+    <meta property="og:locale" content="fr_FR" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Opti’ Scan" />
+    <meta property="og:title" content="Opti’ Scan | Comparateur banques, assurances & services financiers" />
+    <meta property="og:description"
+        content="Comparez les meilleures banques en ligne, assurances et services financiers. Faites un choix éclairé avec Opti’ Scan." />
+    <meta property="og:url" content="https://opti-scan.fr/" />
+    <meta property="og:image" content="https://opti-scan.fr/docs/assets/images/og-image.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Opti’ Scan | Comparateur banques, assurances & services financiers" />
+    <meta name="twitter:description"
+        content="Comparez les meilleures offres bancaires, assurances et services financiers en toute transparence." />
+    <meta name="twitter:image" content="https://opti-scan.fr/docs/assets/images/og-image.png" />
+
+    <!-- Icons -->
+    <link rel="icon" type="image/png" href="/docs/assets/images/favicon.png" />
+    <link rel="apple-touch-icon" href="/docs/assets/images/apple-touch-icon.png" />
+
+    <!-- Preconnect -->
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin />
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
+    <link rel="preconnect" href="https://unpkg.com" crossorigin />
+
+    <link rel="stylesheet" href="/docs/Style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://unpkg.com/lenis@1.3.1/dist/lenis.css" />
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+
+    <!-- JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Opti’ Scan",
+      "url": "https://opti-scan.fr/",
+      "inLanguage": "fr-FR",
+      "description": "Comparateur de banques, assurances et services financiers.",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://opti-scan.fr/?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    }
+  </script>
+</head>
+
+
+
+<body class="">
+
+    <!-- ----------------------------components------------------------------ -->
+    <!-- Loader -->
+    <div id="siteLoader" class="fixed inset-0 z-[9999] bg-white flex items-center justify-center">
+        <div class="relative w-full h-full flex items-center justify-center overflow-hidden">
+
+            <div class="absolute -top-24 -left-24 w-[380px] h-[380px] bg-blue-500/20 rounded-full blur-3xl"></div>
+            <div class="absolute -bottom-24 -right-24 w-[380px] h-[380px] bg-emerald-500/20 rounded-full blur-3xl">
+            </div>
+
+            <div class="relative flex flex-col items-center gap-6">
+                <div class="relative w-24 h-24  flex items-center justify-center">
+                    <img src="/docs/assets/images/favicon.png" class="h-7" alt="">
+                    <div
+                        class="absolute inset-0 rounded-3xl border-2 border-transparent border-l-blue-600 border-b-emerald-500 border-t-blue-600 border-r-emerald-500 animate-spin">
+                    </div>
+                </div>
+
+                <div class="text-center">
+                    <p class="text-lg font-semibold text-slate-900">Opti’ Scan</p>
+                    <p class="text-sm text-slate-600 mt-1">Chargement…</p>
+                </div>
+
+                <div class="w-56 h-2 rounded-full bg-slate-100 overflow-hidden border border-slate-200">
+                    <div
+                        class="h-full w-1/2 rounded-full bg-gradient-to-r from-blue-600 to-emerald-500 animate-loaderBar">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script>
+        const loader = document.getElementById("siteLoader");
+        const MIN_LOADER_TIME = 500;
+
+        const startTime = Date.now();
+
+        function hideLoader() {
+            const elapsed = Date.now() - startTime;
+            const remaining = Math.max(0, MIN_LOADER_TIME - elapsed);
+
+            setTimeout(() => {
+                loader.classList.add("opacity-0", "pointer-events-none");
+                loader.style.transition = "opacity 450ms ease";
+                setTimeout(() => loader.remove(), 500);
+            }, remaining);
+        }
+
+        window.addEventListener("load", hideLoader);
+    </script>
+
+    <style>
+        @keyframes loaderBar {
+            0% {
+                transform: translateX(0%);
+            }
+
+            50% {
+                transform: translateX(100%);
+            }
+
+            100% {
+                transform: translateX(0%);
+            }
+        }
+
+        .animate-loaderBar {
+            animation: loaderBar 1.2s ease-in-out infinite;
+        }
+    </style>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop"
+        class="fixed bottom-6 right-6 z-50 h-12 w-12 rounded-2xl bg-slate-900 text-white shadow-lg opacity-0 pointer-events-none translate-y-3 transition-all duration-300 hover:opacity-90">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <script>
+        const backToTop = document.getElementById("backToTop");
+
+        window.addEventListener("scroll", () => {
+            if (window.scrollY > 200) {
+                backToTop.classList.remove("opacity-0", "pointer-events-none", "translate-y-3");
+                backToTop.classList.add("opacity-100", "translate-y-0");
+            } else {
+                backToTop.classList.add("opacity-0", "pointer-events-none", "translate-y-3");
+                backToTop.classList.remove("opacity-100", "translate-y-0");
+            }
+        });
+
+        backToTop.addEventListener("click", () => {
+            window.scrollTo({ top: 0, behavior: "smooth" });
+        });
+    </script>
+
+
+    <!-- ----------------------------components------------------------------ -->
+
+
+    <!-- Header Section -->
+    <header id="siteHeader" data-aos="fade-down"
+        class="fixed transition-all duration-500 top-0 left-0 w-full z-50 bg-white/80 backdrop-blur border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-6 h-16 flex items-center md:h-24 justify-between">
+
+            <a href="/index.html" class="text-xl font-semibold text-slate-900">
+                <img src="/docs/assets/images/logo.png" class="h-10 md:h-14" alt="">
+            </a>
+
+            <nav class="hidden lg:flex items-center gap-8 text-sm font-medium text-slate-700">
+                <a href="#" class="hover:text-slate-900">Banques</a>
+                <a href="#" class="hover:text-slate-900">Banques Pro</a>
+                <a href="#" class="hover:text-slate-900">Assurances</a>
+                <a href="#" class="hover:text-slate-900">Guides</a>
+                <a href="#" class="px-5 py-2 rounded-xl bg-slate-900 text-white hover:opacity-90 transition">
+                    Comparer
+                </a>
+            </nav>
+
+            <button id="menuBtn" class="lg:hidden text-slate-800 text-xl">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile Sidebar -->
+    <div id="mobileMenu"
+        class="fixed top-0 right-0 h-full w-0 bg-white overflow-hidden transition-all duration-300 ease-in-out z-50">
+
+        <div class="flex items-center justify-between px-6 h-16 border-b border-slate-200">
+            <a href="/index.html" class="text-xl font-semibold text-slate-900">
+                <img src="/docs/assets/images/logo.png" class="h-10 md:h-14" alt="">
+            </a>
+            <button id="closeBtn" class="text-xl text-slate-800">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+        </div>
+
+        <nav class="flex flex-col gap-6 px-6 py-10 text-slate-700 font-medium">
+            <a href="#" class="hover:text-slate-900">Banques</a>
+            <a href="#" class="hover:text-slate-900">Banques Pro</a>
+            <a href="#" class="hover:text-slate-900">Assurances</a>
+            <a href="#" class="hover:text-slate-900">Guides</a>
+            <a href="#" class="mt-4 inline-flex justify-center px-6 py-3 rounded-xl bg-slate-900 text-white">
+                Comparer
+            </a>
+        </nav>
+    </div>
+
+    <script>
+        const menuBtn = document.getElementById("menuBtn");
+        const closeBtn = document.getElementById("closeBtn");
+        const mobileMenu = document.getElementById("mobileMenu");
+
+        menuBtn.addEventListener("click", () => {
+            mobileMenu.style.width = "100%";
+        });
+
+        closeBtn.addEventListener("click", () => {
+            mobileMenu.style.width = "0";
+        });
+
+        document.addEventListener("DOMContentLoaded", () => {
+            const header = document.getElementById("siteHeader");
+
+            function updateHeaderBg() {
+                if (window.scrollY > 100) {
+                    header.classList.remove("bg-transparent");
+                    header.classList.add("bg-white/80");
+                } else {
+                    header.classList.remove("bg-white/80");
+                    header.classList.add("bg-transparent");
+                }
+            }
+
+            updateHeaderBg();
+
+            window.addEventListener("scroll", updateHeaderBg, { passive: true });
+        });
+
+    </script>
+
+
+    <!-- hero section -->
+    <section class="relative overflow-hidden bg-gradient-to-br from-slate-50 pt-10 via-white to-slate-100">
+
+        <div data-aos="zoom-in" data-aos-delay="1000"
+            class="absolute -top-32 -left-32 w-[400px] h-[400px] bg-blue-500/20 rounded-full blur-3xl"></div>
+        <div data-aos="zoom-in" data-aos-delay="1000"
+            class="absolute top-1/3 -right-32 w-[400px] h-[400px] bg-emerald-500/20 rounded-full blur-3xl"></div>
+
+        <div class="relative max-w-7xl mx-auto px-6 py-28 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+
+            <div class="space-y-8">
+
+                <span data-aos="fade-up" data-aos-delay="200"
+                    class="inline-flex items-center gap-2 px-4 py-1.5 text-sm rounded-full bg-white/70 backdrop-blur border border-slate-200 shadow-sm">
+                    <i class="fa-solid fa-magnifying-glass text-slate-600"></i>
+                    Comparaison intelligente & transparente
+                </span>
+
+                <h1 data-aos="fade-up" data-aos-delay="400"
+                    class="text-4xl md:text-5xl xl:text-6xl font-semibold tracking-tight capitalize md:leading-[1.1] text-slate-900">
+                    Comparez les meilleures offres bancaires
+                    <span class="block text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-emerald-500">
+                        en toute confiance
+                    </span>
+                </h1>
+
+                <p class="text-lg text-slate-600 max-w-xl" data-aos="fade-up" data-aos-delay="600">
+                    Opti’ Scan analyse, compare et sélectionne pour vous les banques,
+                    assurances et services financiers les plus adaptés à vos besoins.
+                </p>
+
+                <div class="flex flex-wrap gap-4" data-aos="fade-up" data-aos-delay="700">
+                    <a href="#comparisons"
+                        class="inline-flex items-center justify-center gap-2 px-7 py-3 rounded-xl bg-gradient-to-r from-blue-600 to-emerald-500 text-white font-medium shadow-lg hover:scale-[1.02] transition">
+                        Comparer les offres
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                    <a href="#how-it-works"
+                        class="inline-flex items-center justify-center gap-2 px-7 py-3 rounded-xl border border-slate-300 text-slate-700 hover:bg-slate-100 transition">
+                        Comment ça marche
+                        <i class="fa-solid fa-circle-info"></i>
+                    </a>
+                </div>
+
+                <div data-aos="fade-up" data-aos-delay="800"
+                    class="flex items-center gap-6 pt-4 text-sm text-slate-500">
+                    <span class="flex items-center gap-2">
+                        <i class="fa-solid fa-shield-halved text-emerald-500"></i>
+                        100% indépendant
+                    </span>
+                    <span class="flex items-center gap-2">
+                        <i class="fa-solid fa-star text-amber-400"></i>
+                        Notes vérifiées
+                    </span>
+                    <span class="flex items-center gap-2">
+                        <i class="fa-solid fa-flag text-blue-600"></i>
+                        Comparaisons France
+                    </span>
+                </div>
+            </div>
+
+            <div class="relative flex justify-center lg:justify-end">
+
+                <div class="relative w-full max-w-lg h-[420px]">
+
+                    <!-- Background Card -->
+                    <div data-aos="zoom-in" data-aos-delay="200"
+                        class="absolute top-12 right-0 w-72 h-44 rounded-2xl bg-gradient-to-br from-slate-100 to-white border border-slate-200 shadow-xl rotate-6">
+                        <div class="p-5 h-full flex flex-col justify-between">
+                            <div class="flex justify-between items-center">
+                                <span class="text-sm font-semibold text-slate-700">Carte Bancaire</span>
+                                <i class="fa-solid fa-credit-card text-slate-400"></i>
+                            </div>
+                            <div class="text-sm tracking-widest text-slate-500">
+                                •••• •••• •••• 4589
+                            </div>
+                            <div class="flex justify-between items-center text-xs text-slate-500">
+                                <span>12/27</span>
+                                <span>VISA</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Middle Card -->
+                    <div data-aos="zoom-in" data-aos-delay="400"
+                        class="absolute top-0 left-8 w-80 h-48 rounded-2xl bg-gradient-to-br from-blue-600 to-emerald-500 shadow-2xl -rotate-3 text-white">
+                        <div class="p-6 h-full flex flex-col justify-between">
+                            <div class="flex justify-between items-center">
+                                <span class="text-sm font-medium">Opti’ Scan</span>
+                                <i class="fa-solid fa-building-columns"></i>
+                            </div>
+                            <div class="text-lg tracking-widest">
+                                •••• •••• •••• 9024
+                            </div>
+                            <div class="flex justify-between items-center text-sm">
+                                <span>Carte Premium</span>
+                                <span>MASTER</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Front Card -->
+                    <div data-aos="zoom-in" data-aos-delay="400"
+                        class="absolute -bottom-3 right-10 w-80 h-56 rounded-3xl bg-white border border-slate-200 shadow-2xl">
+                        <div class="p-6 h-full flex flex-col justify-between">
+
+                            <div class="flex items-center justify-between">
+                                <span class="font-semibold text-slate-900">
+                                    Banque recommandée
+                                </span>
+                                <span class="text-sm text-emerald-500 flex items-center gap-1">
+                                    <i class="fa-solid fa-star"></i> 9.6
+                                </span>
+                            </div>
+
+                            <div class="flex items-center gap-3">
+                                <div class="w-10 h-10 flex items-center justify-center">
+                                    <img src="/docs/assets/images/favicon.png" class="h-7" alt="">
+                                </div>
+                                <div>
+                                    <p class="text-sm font-medium text-slate-900">Banque Premium</p>
+                                    <p class="text-xs text-slate-500">Sans frais bancaires</p>
+                                </div>
+                            </div>
+
+                            <ul class="text-sm text-slate-600 space-y-1">
+                                <li><i class="fa-solid fa-check text-emerald-500 mr-2"></i>Carte gratuite</li>
+                                <li><i class="fa-solid fa-check text-emerald-500 mr-2"></i>Paiements internationaux</li>
+                                <li><i class="fa-solid fa-check text-emerald-500 mr-2"></i>Ouverture rapide</li>
+                            </ul>
+
+                            <button
+                                class="mt-2 w-full py-2 rounded-lg bg-slate-900 text-white hover:opacity-90 transition">
+                                Découvrir
+                            </button>
+
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </div>
+    </section>
+
+
+    <!-- Comparison Categories Section -->
+    <section class="relative py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <h2 data-aos="fade-up" class="text-3xl capitalize md:text-4xl font-semibold text-slate-900">
+                    Comparez ce qui compte vraiment
+                </h2>
+                <p data-aos="fade-up" class="mt-4 text-slate-600">
+                    Accédez rapidement aux meilleures offres financières, sélectionnées avec rigueur et transparence.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+
+                <a href="#" data-aos="fade-up" class="">
+                    <div
+                        class="group relative p-8 rounded-2xl bg-slate-50 border border-slate-200 hover:shadow-xl transition px-5">
+
+
+                        <div
+                            class="flex items-center justify-center w-14 h-14 rounded-xl bg-gradient-to-br from-blue-600 to-emerald-500 text-white mb-6">
+                            <i class="fa-solid fa-building-columns text-xl"></i>
+                        </div>
+                        <h3 class="text-lg font-semibold text-slate-900 mb-2">
+                            Banques
+                        </h3>
+                        <p class="text-sm text-slate-600">
+                            Comptes, cartes et services bancaires pour particuliers.
+                        </p>
+                    </div>
+                </a>
+
+                <a href="#" data-aos="fade-up" data-aos-delay="200" class="">
+                    <div
+                        class="group relative p-8 rounded-2xl bg-slate-50 border border-slate-200 hover:shadow-xl transition px-5">
+                        <div
+                            class="flex items-center justify-center w-14 h-14 rounded-xl bg-gradient-to-br from-indigo-600 to-blue-500 text-white mb-6">
+                            <i class="fa-solid fa-briefcase text-xl"></i>
+                        </div>
+                        <h3 class="text-lg font-semibold text-slate-900 mb-2">
+                            Pour les Pros
+                        </h3>
+                        <p class="text-sm text-slate-600">
+                            Banques et solutions dédiées aux professionnels.
+                        </p>
+                    </div>
+                </a>
+
+                <a href="#" data-aos="fade-up" data-aos-delay="300" class="">
+                    <div
+                        class="group relative p-8 rounded-2xl bg-slate-50 border border-slate-200 hover:shadow-xl transition px-5">
+
+
+                        <div
+                            class="flex items-center justify-center w-14 h-14 rounded-xl bg-gradient-to-br from-emerald-600 to-teal-500 text-white mb-6">
+                            <i class="fa-solid fa-shield-halved text-xl"></i>
+                        </div>
+                        <h3 class="text-lg font-semibold text-slate-900 mb-2">
+                            Assurances
+                        </h3>
+                        <p class="text-sm text-slate-600">
+                            Comparez les meilleures protections adaptées à vos besoins.
+                        </p>
+                    </div>
+                </a>
+
+                <a href="#" data-aos="fade-up" data-aos-delay="400" class="">
+                    <div
+                        class="group relative p-8 rounded-2xl bg-slate-50 border border-slate-200 hover:shadow-xl transition px-5">
+
+
+                        <div
+                            class="flex items-center justify-center w-14 h-14 rounded-xl bg-gradient-to-br from-orange-500 to-pink-500 text-white mb-6">
+                            <i class="fa-solid fa-chart-line text-xl"></i>
+                        </div>
+                        <h3 class="text-lg font-semibold text-slate-900 mb-2">
+                            Services financiers
+                        </h3>
+                        <p class="text-sm text-slate-600">
+                            Épargne, crédits et solutions intelligentes.
+                        </p>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Featured Bank Offers Section -->
+    <section class="relative py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+
+            <div class="flex flex-col lg:flex-row items-center justify-between gap-8 mb-16">
+                <div class="max-w-xl">
+                    <h2 data-aos="fade-up" class="text-3xl capitalize md:text-4xl font-semibold text-slate-900">
+                        Les offres bancaires les plus performantes
+                    </h2>
+                    <p data-aos="fade-up" class="mt-4 text-slate-600">
+                        Sélectionnées selon des critères stricts : frais, services, fiabilité et satisfaction client.
+                    </p>
+                </div>
+
+                <a data-aos="fade-up" href="#"
+                    class="inline-flex items-center gap-2 px-6 py-3 rounded-xl border border-slate-300 text-slate-700 hover:bg-slate-50 transition">
+                    Voir toutes les offres
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+
+                <!-- Hello bank! -->
+                <div class="" data-aos="fade-up">
+                    <div
+                        class="relative p-8 rounded-2xl bg-white border border-slate-200 shadow-sm hover:shadow-xl transition">
+                        <div class="flex items-center justify-between mb-6">
+                            <span class="text-sm font-medium text-emerald-600">
+                                <i class="fa-solid fa-star"></i> 9.4 / 10
+                            </span>
+                            <i class="fa-solid fa-building-columns text-slate-400"></i>
+                        </div>
+
+                        <h3 class="text-xl font-semibold text-slate-900 mb-1">
+                            Hello bank!
+                        </h3>
+                        <p class="text-sm text-slate-600 mb-4">
+                            La banque en ligne qui innove
+                        </p>
+
+                        <ul class="space-y-2 text-sm text-slate-600 mb-6">
+                            <li><i class="fa-solid fa-check text-emerald-500 mr-2"></i>Livraison de la carte à domicile
+                            </li>
+                            <li><i class="fa-solid fa-check text-emerald-500 mr-2"></i>Ouverture de compte 100% en ligne
+                            </li>
+                            <li><i class="fa-solid fa-check text-emerald-500 mr-2"></i>Offres Hello Prime à 1€/mois
+                                pendant
+                                6 mois</li>
+                        </ul>
+
+                        <a href="#"
+                            class="inline-flex w-full justify-center py-3 rounded-xl bg-slate-900 text-white hover:opacity-90 transition">
+                            Voir l’avis
+                        </a>
+                    </div>
+                </div>
+
+                <!-- BoursoBank -->
+                <div class="" data-aos="fade-up">
+                    <div
+                        class="relative p-8 rounded-2xl bg-white border border-slate-200 shadow-sm hover:shadow-xl transition">
+                        <div class="flex items-center justify-between mb-6">
+                            <span class="text-sm font-medium text-emerald-600">
+                                <i class="fa-solid fa-star"></i> 8.9 / 10
+                            </span>
+                            <i class="fa-solid fa-building-columns text-slate-400"></i>
+                        </div>
+
+                        <h3 class="text-xl font-semibold text-slate-900 mb-1">
+                            BoursoBank
+                        </h3>
+                        <p class="text-sm text-slate-600 mb-4">
+                            La banque la moins chère
+                        </p>
+
+                        <ul class="space-y-2 text-sm text-slate-600 mb-6">
+                            <li><i class="fa-solid fa-check text-emerald-500 mr-2"></i>Jusqu’à 100€ offerts</li>
+                            <li><i class="fa-solid fa-check text-emerald-500 mr-2"></i>Assistance client en ligne et par
+                                téléphone</li>
+                            <li><i class="fa-solid fa-check text-emerald-500 mr-2"></i>Ouverture de compte simple et
+                                sécurisée</li>
+                        </ul>
+
+                        <a href="#"
+                            class="inline-flex w-full justify-center py-3 rounded-xl bg-slate-900 text-white hover:opacity-90 transition">
+                            Voir l’avis
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Fortuneo -->
+                <div class="" data-aos="fade-up">
+                    <div
+                        class="relative p-8 rounded-2xl bg-white border border-slate-200 shadow-sm hover:shadow-xl transition">
+                        <div class="flex items-center justify-between mb-6">
+                            <span class="text-sm font-medium text-emerald-600">
+                                <i class="fa-solid fa-star"></i> 8.8 / 10
+                            </span>
+                            <i class="fa-solid fa-building-columns text-slate-400"></i>
+                        </div>
+
+                        <h3 class="text-xl font-semibold text-slate-900 mb-1">
+                            Fortuneo
+                        </h3>
+                        <p class="text-sm text-slate-600 mb-4">
+                            Avantages carte Gold Mastercard
+                        </p>
+
+                        <ul class="space-y-2 text-sm text-slate-600 mb-6">
+                            <li><i class="fa-solid fa-check text-emerald-500 mr-2"></i>Jusqu’à 150€ offerts</li>
+                            <li><i class="fa-solid fa-check text-emerald-500 mr-2"></i>Assurances à l’étranger</li>
+                            <li><i class="fa-solid fa-check text-emerald-500 mr-2"></i>Interface simple de gestion</li>
+                        </ul>
+
+                        <a href="#"
+                            class="inline-flex w-full justify-center py-3 rounded-xl bg-slate-900 text-white hover:opacity-90 transition">
+                            Voir l’avis
+                        </a>
+                    </div>
+                </div>
+
+                <!-- SG -->
+                <div class="" data-aos="fade-up">
+                    <div
+                        class="relative p-8 rounded-2xl bg-white border border-slate-200 shadow-sm hover:shadow-xl transition">
+                        <div class="flex items-center justify-between mb-6">
+                            <span class="text-sm font-medium text-emerald-600">
+                                <i class="fa-solid fa-star"></i> 8.5 / 10
+                            </span>
+                            <i class="fa-solid fa-building-columns text-slate-400"></i>
+                        </div>
+
+                        <h3 class="text-xl font-semibold text-slate-900 mb-1">
+                            SG
+                        </h3>
+                        <p class="text-sm text-slate-600 mb-4">
+                            La banque adaptée à vos besoins
+                        </p>
+
+                        <ul class="space-y-2 text-sm text-slate-600 mb-6">
+                            <li><i class="fa-solid fa-check text-emerald-500 mr-2"></i>Jusqu’à 140€ offerts</li>
+                            <li><i class="fa-solid fa-check text-emerald-500 mr-2"></i>Sans condition de revenus</li>
+                            <li><i class="fa-solid fa-check text-emerald-500 mr-2"></i>Cashback jusqu’à 20%</li>
+                        </ul>
+
+                        <a href="#"
+                            class="inline-flex w-full justify-center py-3 rounded-xl bg-slate-900 text-white hover:opacity-90 transition">
+                            Voir l’avis
+                        </a>
+                    </div>
+                </div>
+
+                <!-- BNP Paribas -->
+                <div class="" data-aos="fade-up">
+                    <div
+                        class="relative p-8 rounded-2xl bg-white border border-slate-200 shadow-sm hover:shadow-xl transition">
+                        <div class="flex items-center justify-between mb-6">
+                            <span class="text-sm font-medium text-emerald-600">
+                                <i class="fa-solid fa-star"></i> 8.4 / 10
+                            </span>
+                            <i class="fa-solid fa-building-columns text-slate-400"></i>
+                        </div>
+
+                        <h3 class="text-xl font-semibold text-slate-900 mb-1">
+                            BNP Paribas
+                        </h3>
+                        <p class="text-sm text-slate-600 mb-4">
+                            L’agence bancaire en ligne
+                        </p>
+
+                        <ul class="space-y-2 text-sm text-slate-600 mb-6">
+                            <li><i class="fa-solid fa-check text-emerald-500 mr-2"></i>Conseiller personnel dédié</li>
+                            <li><i class="fa-solid fa-check text-emerald-500 mr-2"></i>Accès à 2 000 agences en France
+                            </li>
+                            <li><i class="fa-solid fa-check text-emerald-500 mr-2"></i>80€ offerts + 1 an gratuit</li>
+                        </ul>
+
+                        <a href="#"
+                            class="inline-flex w-full justify-center py-3 rounded-xl bg-slate-900 text-white hover:opacity-90 transition">
+                            Voir l’avis
+                        </a>
+                    </div>
+                </div>
+
+                <!-- N26 -->
+                <div class="" data-aos="fade-up">
+                    <div
+                        class="relative p-8 rounded-2xl bg-white border border-slate-200 shadow-sm hover:shadow-xl transition">
+                        <div class="flex items-center justify-between mb-6">
+                            <span class="text-sm font-medium text-emerald-600">
+                                <i class="fa-solid fa-star"></i> 8.6 / 10
+                            </span>
+                            <i class="fa-solid fa-building-columns text-slate-400"></i>
+                        </div>
+
+                        <h3 class="text-xl font-semibold text-slate-900 mb-1">
+                            N26
+                        </h3>
+                        <p class="text-sm text-slate-600 mb-4">
+                            La banque la plus accessible
+                        </p>
+
+                        <ul class="space-y-2 text-sm text-slate-600 mb-6">
+                            <li><i class="fa-solid fa-check text-emerald-500 mr-2"></i>Ouverture en 8 minutes</li>
+                            <li><i class="fa-solid fa-check text-emerald-500 mr-2"></i>Sans condition de revenus</li>
+                            <li><i class="fa-solid fa-check text-emerald-500 mr-2"></i>Notifications en temps réel</li>
+                        </ul>
+
+                        <a href="#"
+                            class="inline-flex w-full justify-center py-3 rounded-xl bg-slate-900 text-white hover:opacity-90 transition">
+                            Voir l’avis
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Monabanq -->
+                <div class="" data-aos="fade-up">
+                    <div
+                        class="relative p-8 rounded-2xl bg-white border border-slate-200 shadow-sm hover:shadow-xl transition">
+
+                        <div class="flex items-center justify-between mb-6">
+                            <span class="text-sm font-medium text-emerald-600">
+                                <i class="fa-solid fa-star"></i> 8.7 / 10
+                            </span>
+                            <i class="fa-solid fa-building-columns text-slate-400"></i>
+                        </div>
+
+                        <h3 class="text-xl font-semibold text-slate-900 mb-2">
+                            Monabanq
+                        </h3>
+
+                        <p class="text-sm text-slate-600 mb-4">
+                            Assurances et assistances incluses
+                        </p>
+
+                        <ul class="space-y-2 text-sm text-slate-600 mb-6">
+                            <li>
+                                <i class="fa-solid fa-check text-emerald-500 mr-2"></i>
+                                Jusqu’à 120€ offerts
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-check text-emerald-500 mr-2"></i>
+                                Visa Platinum / Premier sans condition de revenus
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-check text-emerald-500 mr-2"></i>
+                                Dépôt chèques et espèces via Crédit Mutuel / CIC
+                            </li>
+                        </ul>
+
+                        <a href="#"
+                            class="inline-flex w-full justify-center py-3 rounded-xl bg-slate-900 text-white hover:opacity-90 transition">
+                            Voir l’avis
+                        </a>
+                    </div>
+                </div>
+
+
+
+                <div class="" data-aos="fade-up">
+                    <div
+                        class="relative p-8 rounded-2xl bg-white border border-slate-200 shadow-sm hover:shadow-xl transition">
+
+                        <div class="flex items-center justify-between mb-6">
+                            <span class="text-sm font-medium text-emerald-600">
+                                <i class="fa-solid fa-star"></i> 9.6 / 10
+                            </span>
+                            <i class="fa-solid fa-building-columns text-slate-400"></i>
+                        </div>
+
+                        <h3 class="text-xl font-semibold text-slate-900 mb-2">
+                            SHINE
+                        </h3>
+
+                        <p class="text-sm text-slate-600 mb-4">
+                            Meilleure banque pro
+                        </p>
+
+                        <ul class="space-y-2 text-sm text-slate-600 mb-6">
+                            <li>
+                                <i class="fa-solid fa-check text-emerald-500 mr-2"></i>
+                                50€ offerts + Hello Prime 1€/mois pendant 6 mois
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-check text-emerald-500 mr-2"></i>
+                                Élue « Service client 2024 »
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-check text-emerald-500 mr-2"></i>
+                                Dépôt espèces, encaissements, chèques, crédit
+                            </li>
+                        </ul>
+
+                        <a href="#"
+                            class="inline-flex w-full justify-center py-3 rounded-xl bg-slate-900 text-white hover:opacity-90 transition">
+                            Découvrir
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Crédit Agricole -->
+                <div class="" data-aos="fade-up">
+                    <div
+                        class="relative p-8 rounded-2xl bg-white border border-slate-200 shadow-sm hover:shadow-xl transition">
+
+                        <div class="flex items-center justify-between mb-6">
+                            <span class="text-sm font-medium text-emerald-600">
+                                <i class="fa-solid fa-star"></i> 8.0 / 10
+                            </span>
+                            <i class="fa-solid fa-building-columns text-slate-400"></i>
+                        </div>
+
+                        <h3 class="text-xl font-semibold text-slate-900 mb-2">
+                            Crédit Agricole
+                        </h3>
+
+                        <p class="text-sm text-slate-600 mb-4">
+                            Ma Banque au Quotidien – Une banque humaine
+                        </p>
+
+                        <ul class="space-y-2 text-sm text-slate-600 mb-6">
+                            <li>
+                                <i class="fa-solid fa-check text-emerald-500 mr-2"></i>
+                                5 offres bancaires adaptées à vos besoins
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-check text-emerald-500 mr-2"></i>
+                                Sans engagement ni condition de revenus
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-check text-emerald-500 mr-2"></i>
+                                Souscription en ligne ou en agence
+                            </li>
+                        </ul>
+
+                        <a href="#"
+                            class="inline-flex w-full justify-center py-3 rounded-xl bg-slate-900 text-white hover:opacity-90 transition">
+                            Voir l’avis
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+        </div>
+    </section>
+
+
+
+    <!-- How Opti’ Scan Works Section -->
+    <section class="relative py-24 bg-zinc-50">
+        <div class="max-w-7xl mx-auto px-6">
+
+            <div class="text-center max-w-2xl mx-auto mb-20">
+                <h2 data-aos="fade-up" class="text-3xl md:text-4xl capitalize font-semibold text-slate-900">
+                    Comment fonctionne Opti’ Scan
+                </h2>
+                <p data-aos="fade-up" class="mt-4 text-slate-600">
+                    Une comparaison simple, transparente et pensée pour vous faire gagner du temps.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+
+                <div class="relative text-center px-8" data-aos="fade-up">
+                    <div
+                        class="mx-auto mb-6 flex items-center justify-center w-16 h-16 rounded-2xl bg-gradient-to-br from-blue-600 to-emerald-500 text-white shadow-lg">
+                        <i class="fa-solid fa-magnifying-glass text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-slate-900 mb-3">
+                        Analyse intelligente
+                    </h3>
+                    <p class="text-slate-600 text-sm">
+                        Nous analysons en continu les offres bancaires selon des critères précis et objectifs.
+                    </p>
+                </div>
+
+                <div class="relative text-center px-8" data-aos="fade-up" data-aos-delay="200">
+                    <div
+                        class="mx-auto mb-6 flex items-center justify-center w-16 h-16 rounded-2xl bg-gradient-to-br from-blue-600 to-emerald-500 text-white shadow-lg">
+                        <i class="fa-solid fa-sliders text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-slate-900 mb-3">
+                        Comparaison claire
+                    </h3>
+                    <p class="text-slate-600 text-sm">
+                        Comparez facilement les frais, services, avantages et conditions en un seul endroit.
+                    </p>
+                </div>
+
+                <div class="relative text-center px-8" data-aos="fade-up" data-aos-delay="300">
+                    <div
+                        class="mx-auto mb-6 flex items-center justify-center w-16 h-16 rounded-2xl bg-gradient-to-br from-blue-600 to-emerald-500 text-white shadow-lg">
+                        <i class="fa-solid fa-check-double text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-slate-900 mb-3">
+                        Choix éclairé
+                    </h3>
+                    <p class="text-slate-600 text-sm">
+                        Sélectionnez l’offre la plus adaptée à votre profil en toute confiance.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Trust & Transparency Section -->
+    <section class="relative py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+
+                <div>
+                    <h2 data-aos="fade-up"
+                        class="text-3xl capitalize md:leading-[1.4] md:text-4xl font-semibold text-slate-900">
+                        Une comparaison indépendante et transparente
+                    </h2>
+                    <p data-aos="fade-up" class="mt-6 text-slate-600 max-w-xl">
+                        Opti’ Scan est une plateforme indépendante. Nos classements sont basés sur une analyse
+                        rigoureuse des frais, services, conditions et retours utilisateurs.
+                    </p>
+
+                    <ul class="mt-8 space-y-4 text-slate-600">
+                        <li data-aos="fade-up" class="flex items-start gap-3">
+                            <i class="fa-solid fa-shield-halved text-emerald-500 mt-1"></i>
+                            <span>Données analysées selon des critères objectifs et vérifiables</span>
+                        </li>
+                        <li data-aos="fade-up" class="flex items-start gap-3">
+                            <i class="fa-solid fa-scale-balanced text-emerald-500 mt-1"></i>
+                            <span>Aucune influence commerciale sur nos classements</span>
+                        </li>
+                        <li data-aos="fade-up" class="flex items-start gap-3">
+                            <i class="fa-solid fa-eye text-emerald-500 mt-1"></i>
+                            <span>Méthodologie claire et accessible à tous</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+
+                    <div data-aos="fade-up" class="p-8 rounded-2xl border border-slate-200 bg-slate-50">
+                        <i class="fa-solid fa-chart-simple text-2xl text-blue-600 mb-4"></i>
+                        <h3 class="text-lg font-semibold text-slate-900 mb-2">
+                            Analyse continue
+                        </h3>
+                        <p class="text-sm text-slate-600">
+                            Les offres sont mises à jour régulièrement pour refléter le marché réel.
+                        </p>
+                    </div>
+
+                    <div data-aos="fade-up" class="p-8 rounded-2xl border border-slate-200 bg-slate-50">
+                        <i class="fa-solid fa-user-shield text-2xl text-blue-600 mb-4"></i>
+                        <h3 class="text-lg font-semibold text-slate-900 mb-2">
+                            Sécurité & fiabilité
+                        </h3>
+                        <p class="text-sm text-slate-600">
+                            Vos données et votre confiance sont notre priorité absolue.
+                        </p>
+                    </div>
+
+                    <div data-aos="fade-up" class="p-8 rounded-2xl border border-slate-200 bg-slate-50">
+                        <i class="fa-solid fa-ranking-star text-2xl text-blue-600 mb-4"></i>
+                        <h3 class="text-lg font-semibold text-slate-900 mb-2">
+                            Classements clairs
+                        </h3>
+                        <p class="text-sm text-slate-600">
+                            Notes compréhensibles basées sur des critères concrets.
+                        </p>
+                    </div>
+
+                    <div data-aos="fade-up" class="p-8 rounded-2xl border border-slate-200 bg-slate-50">
+                        <i class="fa-solid fa-handshake text-2xl text-blue-600 mb-4"></i>
+                        <h3 class="text-lg font-semibold text-slate-900 mb-2">
+                            Transparence totale
+                        </h3>
+                        <p class="text-sm text-slate-600">
+                            Nous expliquons clairement comment et pourquoi chaque offre est classée.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="relative py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+
+            <div class="text-center max-w-2xl mx-auto mb-20">
+                <h2 data-aos="fade-up" class="text-3xl md:text-4xl capitalize font-semibold text-slate-900">
+                    Ils nous font confiance
+                </h2>
+                <p data-aos="fade-up" class="mt-4 text-slate-600">
+                    Des milliers d’utilisateurs utilisent Opti’ Scan pour faire les bons choix financiers.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+
+                <div data-aos="fade-up"
+                    class="p-8 rounded-2xl border border-slate-200 bg-slate-50 hover:shadow-lg transition">
+                    <div class="flex items-center gap-3 mb-4 text-amber-400">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-slate-600 text-sm mb-6">
+                        Grâce à Opti’ Scan, j’ai trouvé une banque sans frais en quelques minutes.
+                    </p>
+                    <div class="flex items-center gap-4">
+                        <div
+                            class="flex items-center justify-center w-10 h-10 rounded-full bg-gradient-to-br from-blue-600 to-emerald-500 text-white">
+                            <i class="fa-solid fa-user"></i>
+                        </div>
+                        <div>
+                            <p class="text-sm font-semibold text-slate-900">Julien M.</p>
+                            <p class="text-xs text-slate-500">Client particulier</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div data-aos="fade-up"
+                    class="p-8 rounded-2xl border border-slate-200 bg-slate-50 hover:shadow-lg transition">
+                    <div class="flex items-center gap-3 mb-4 text-amber-400">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-slate-600 text-sm mb-6">
+                        Comparaison très bien expliquée. Les critères sont clairs et les offres faciles à comprendre.
+                    </p>
+                    <div class="flex items-center gap-4">
+                        <div
+                            class="flex items-center justify-center w-10 h-10 rounded-full bg-gradient-to-br from-blue-600 to-emerald-500 text-white">
+                            <i class="fa-solid fa-user"></i>
+                        </div>
+                        <div>
+                            <p class="text-sm font-semibold text-slate-900">Sophie L.</p>
+                            <p class="text-xs text-slate-500">Entrepreneure</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div data-aos="fade-up"
+                    class="p-8 rounded-2xl border border-slate-200 bg-slate-50 hover:shadow-lg transition">
+                    <div class="flex items-center gap-3 mb-4 text-amber-400">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-slate-600 text-sm mb-6">
+                        Un comparateur sérieux et indépendant. Je recommande sans hésiter.
+                    </p>
+                    <div class="flex items-center gap-4">
+                        <div
+                            class="flex items-center justify-center w-10 h-10 rounded-full bg-gradient-to-br from-blue-600 to-emerald-500 text-white">
+                            <i class="fa-solid fa-user"></i>
+                        </div>
+                        <div>
+                            <p class="text-sm font-semibold text-slate-900">Thomas R.</p>
+                            <p class="text-xs text-slate-500">Freelance</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA Section -->
+    <section class="relative pb-24 pt-10 bg-white" data-aos="zoom-in-up">
+        <div class="max-w-7xl mx-auto px-6">
+
+            <div
+                class="relative overflow-hidden rounded-3xl border border-slate-200 bg-gradient-to-br from-slate-50 to-white px-10 py-16 text-center">
+
+                <div class="absolute -top-24 -right-24 w-64 h-64 bg-blue-500/10 rounded-full blur-3xl"></div>
+                <div class="absolute -bottom-24 -left-24 w-64 h-64 bg-emerald-500/10 rounded-full blur-3xl"></div>
+
+                <h2 class="text-3xl md:text-4xl font-semibold text-slate-900 capitalize max-w-3xl mx-auto">
+                    Faites le bon choix bancaire dès aujourd’hui
+                </h2>
+
+                <p class="mt-6 text-slate-600 max-w-xl mx-auto">
+                    Comparez gratuitement les meilleures offres et trouvez la solution financière
+                    parfaitement adaptée à vos besoins.
+                </p>
+
+                <div class="mt-10 flex flex-wrap justify-center gap-4">
+                    <a href="#"
+                        class="inline-flex items-center gap-2 px-8 py-4 rounded-xl bg-slate-900 text-white font-medium hover:scale-[1.02] transition">
+                        Comparer les offres
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                    <a href="#"
+                        class="inline-flex items-center gap-2 px-8 py-4 rounded-xl border border-slate-300 text-slate-700 hover:bg-slate-100 transition">
+                        Découvrir la méthode
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="relative bg-white border-t border-slate-200">
+        <div class="max-w-7xl mx-auto px-6 py-20">
+
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12">
+
+                <div>
+                    <a href="/index.html" class="text-xl font-semibold text-slate-900">
+                        <img src="/docs/assets/images/logo.png" class="h-10 md:h-14" alt="">
+                    </a>
+                    <p class="text-sm mt-5 text-slate-600 max-w-sm">
+                        Plateforme indépendante de comparaison bancaire, d’assurances et de services financiers.
+                    </p>
+                </div>
+
+                <div>
+                    <h4 class="font-semibold text-slate-900 mb-4">
+                        Comparer
+                    </h4>
+                    <ul class="space-y-3 text-sm text-slate-600">
+                        <li><a href="#" class="hover:text-slate-900">Banques</a></li>
+                        <li><a href="#" class="hover:text-slate-900">Banques Pro</a></li>
+                        <li><a href="#" class="hover:text-slate-900">Assurances</a></li>
+                        <li><a href="#" class="hover:text-slate-900">Services financiers</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="font-semibold text-slate-900 mb-4">
+                        Ressources
+                    </h4>
+                    <ul class="space-y-3 text-sm text-slate-600">
+                        <li><a href="#" class="hover:text-slate-900">Guides & conseils</a></li>
+                        <li><a href="#" class="hover:text-slate-900">Classements</a></li>
+                        <li><a href="#" class="hover:text-slate-900">FAQ</a></li>
+                        <li><a href="#" class="hover:text-slate-900">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="font-semibold text-slate-900 mb-4">
+                        Légal
+                    </h4>
+                    <ul class="space-y-3 text-sm text-slate-600">
+                        <li><a href="#" class="hover:text-slate-900">Mentions légales</a></li>
+                        <li><a href="#" class="hover:text-slate-900">Politique de confidentialité</a></li>
+                        <li><a href="#" class="hover:text-slate-900">Cookies</a></li>
+                        <li><a href="#" class="hover:text-slate-900">Transparence</a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div
+                class="mt-16 pt-8 border-t border-slate-200 flex flex-col md:flex-row items-center justify-between gap-6">
+                <p class="text-sm text-slate-500">
+                    © 2025 Opti’ Scan. Tous droits réservés.
+                </p>
+
+                <div class="flex items-center gap-6 text-slate-500">
+                    <a href="#" class="hover:text-slate-900 text-xl transition-all">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                    <a href="#" class="hover:text-slate-900 text-xl transition-all">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+                    <a href="#" class="hover:text-slate-900 text-xl transition-all">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+
+    <!-- Scripts -->
+    <!-- <script src="./docs/javascript/navbar.js"></script>
+    <script src="./docs/javascript/footer.js"></script> -->
+    <script src="https://unpkg.com/lenis@1.3.1/dist/lenis.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script src="./docs/javascript/global.js"></script>
+
+
+</body>
+
+
+</html>
