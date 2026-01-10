@@ -11,7 +11,7 @@ footer.innerHTML = `
                         <img src="/docs/assets/images/logo.png" class="h-16 md:h-14" alt="">
                     </a>
                     <p class="text-sm mt-5 text-slate-600 max-w-sm">
-                        Plateforme indépendante de comparaison bancaire, d’assurances et de services financiers.
+                        Plateforme indépendante de comparaison bancaire, d’assurances et de services financiers
                     </p>
                 </div>
 
@@ -50,12 +50,12 @@ footer.innerHTML = `
             </div>
 
             <div
-                class="mt-16 pt-8 border-t border-slate-200 flex flex-col md:flex-row items-center justify-between gap-6">
+                class="mt-16 pt-8 border-t border-slate-200 flex items-center justify-center text-center gap-6">
                 <p class="text-sm text-slate-500">
-                    © 2025 Opti’ Scan. Tous droits réservés.
+                    © 2026 Opti’ Scan. Tous droits réservés.
                 </p>
 
-                <div class="flex items-center gap-6 text-slate-500">
+                <div class="f lex hidden items-center gap-6 text-slate-500">
                     <a href="#" class="hover:text-slate-900 text-xl transition-all">
                         <i class="fa-brands fa-facebook"></i>
                     </a>
