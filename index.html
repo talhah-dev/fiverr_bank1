@@ -101,6 +101,48 @@
     </script>
 
 
+    <div id="cookieBanner"
+        class="fixed bottom-4 left-1/2 z-50 w-[95%] max-w-4xl -translate-x-1/2 rounded-2xl bg-white p-6 shadow-2xl ring-1 ring-gray-200">
+        <div class="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
+            <p class="text-sm text-gray-600">
+                Nous utilisons des cookies pour améliorer votre expérience, analyser le trafic et personnaliser le
+                contenu.
+                <a href="#" class="font-medium text-blue-600 hover:underline">En savoir plus</a>
+            </p>
+            <div class="flex gap-3 items-center justify-center">
+                <button id="cookieDecline"
+                    class="rounded-xl border border-gray-300 px-5 py-2 text-sm font-medium text-gray-700 hover:bg-gray-100">
+                    Refuser
+                </button>
+                <button id="cookieAccept"
+                    class="rounded-xl bg-gradient-to-r from-blue-600 to-emerald-500 px-5 py-2 text-sm font-medium text-white hover:opacity-90">
+                    Accepter
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const banner = document.getElementById('cookieBanner')
+        const accept = document.getElementById('cookieAccept')
+        const decline = document.getElementById('cookieDecline')
+
+        if (localStorage.getItem('cookiesChoice')) {
+            banner.style.display = 'none'
+        }
+
+        accept.onclick = () => {
+            localStorage.setItem('cookiesChoice', 'accepted')
+            banner.style.display = 'none'
+        }
+
+        decline.onclick = () => {
+            localStorage.setItem('cookiesChoice', 'declined')
+            banner.style.display = 'none'
+        }
+    </script>
+
+
     <!-- ----------------------------components------------------------------ -->
 
 
